@@ -1,6 +1,6 @@
 # 1. INTRODUÇÃO
 
-   O abandono de cães e gatos é uma triste realidade no Brasil e, infelizmente, não é novidade para quem acompanha o dia a dia das ruas. Estima-se que mais de 30 milhões de animais vivam sem lar, segundo números divulgados por organizações como a OMS e grupos de proteção animal. Quem já tentou ajudar sabe: os abrigos estão lotados e as ONGs vivem fazendo milagres com poucos recursos.
+   O abandono de cães é uma triste realidade no Brasil e, infelizmente, não é novidade para quem acompanha o dia a dia das ruas. Estima-se que mais de 30 milhões de animais vivam sem lar, segundo números divulgados por organizações como a OMS e grupos de proteção animal. Quem já tentou ajudar sabe: os abrigos estão lotados e as ONGs vivem fazendo milagres com poucos recursos.
 
    No meio desse cenário difícil, os lares temporários surgem como um respiro. Eles oferecem não só um teto, mas também cuidado, carinho e a chance de o animal se recuperar até encontrar uma família definitiva. O Instituto Pet Brasil calcula que mais de 170 mil cães e gatos estejam hoje sob a proteção de voluntários e organizações. É muita gente e muito trabalho, mas cada vida salva faz diferença.
 
