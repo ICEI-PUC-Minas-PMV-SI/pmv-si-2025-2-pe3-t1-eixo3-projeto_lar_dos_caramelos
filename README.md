@@ -1,6 +1,7 @@
 # Lar dos Caramelos
 
-<img width="819" height="819" alt="Logo_do_Lar_dos_Caramelos (1)" src="https://github.com/user-attachments/assets/adf77a80-4222-463d-83f8-9817a63b24e7" />
+<img width="500" height="500" alt="Logo_do_Lar_dos_Caramelos_500x500" src="https://github.com/user-attachments/assets/19de23fa-5602-4849-a555-3f64077b7681" />
+
 
 
 `CURSO: Sistemas de Informação`
