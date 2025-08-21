@@ -1,9 +1,4 @@
 # 2. ESTADO DA ARTE
-  O abandono de animais domésticos, especialmente cães, ainda é uma ferida aberta em muitas cidades brasileiras. Quem já caminhou por ruas onde olhos tristes pedem ajuda sabe que esse problema vai muito além da falta de comida ou abrigo. É uma questão social, ambiental e emocional que afeta não só os bichinhos, mas também quem se importa com eles.
-
-  Segundo o Instituto Pet Brasil (2023), mais de 30 milhões de animais vivem em situação de abandono. É um número assustador e ele revela não só a ausência de políticas públicas eficazes, mas também o quanto ainda precisamos evoluir como sociedade. Abrigos e ONGs fazem o que podem, muitas vezes com recursos mínimos e corações gigantes.
-
-  Mas nem tudo é desolador. Nos últimos anos, a tecnologia tem se mostrado uma aliada poderosa nessa causa. Plataformas digitais vêm facilitando adoções, organizando lares temporários, arrecadando doações e conectando pessoas que querem fazer a diferença. E isso muda tudo tanto para quem adota quanto para os animais acolhidos.
 
   Estudos como os de Gonçalves Titto e Brandi (2021) mostram como a tecnologia pode melhorar o bem-estar animal, inclusive em contextos agropecuários. Já projetos como o da F&S Consulting com a USP usam câmeras 3D e sensores para monitorar o estresse de suínos, buscando práticas mais humanas e sustentáveis.
 
