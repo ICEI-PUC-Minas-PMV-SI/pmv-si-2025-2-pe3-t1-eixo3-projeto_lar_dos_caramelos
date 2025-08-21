@@ -10,8 +10,19 @@ A gente acredita que quando pessoas comuns e instituições se unem, coisas incr
 
 ## 1.1. Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. 
-Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+  Atualmente, milhares de cães e gatos vivem em situação de rua ou em abrigos superlotados, enfrentando condições precárias de alimentação, saúde e segurança. Esse cenário é agravado pela falta de um canal de comunicação eficiente entre pessoas dispostas a adotar e os animais que precisam de um lar.
+
+  Embora existam ONGs, protetores independentes e campanhas de adoção, muitas vezes essas iniciativas enfrentam dificuldades em alcançar um público maior por conta da falta de visibilidade, organização de informações sobre os animais disponíveis e integração dos interessados com os responsáveis pela adoção.
+
+  Além disso, potenciais adotantes também encontram barreiras: falta de informações claras sobre os animais, ausência de filtros para encontrar perfis compatíveis (como porte, idade e comportamento) e dificuldade em entrar em contato de forma rápida e segura com os responsáveis.
+
+  Em resumo, o problema central é a desconexão entre animais que precisam de um lar e pessoas que desejam adotar, dificultando a redução do número de animais em situação de abandono.
+
+
+  Esse projeto se insere no cenário de proteção animal, podendo ser usado por ONGs, abrigos, protetores independentes e também pela população em geral que deseja adotar um animal de estimação.
+
+  No aspecto tecnológico, o desenvolvimento se baseia em uma aplicação web front-end, que pode ser integrada futuramente a bancos de dados, sistemas de geolocalização e canais de contato online. O contexto principal é o uso social e comunitário, buscando unir recursos digitais à causa da adoção responsável, de forma acessível e de fácil utilização tanto para organizações quanto para indivíduos.
+
 
 ## 1.2. Objetivos do trabalho
 
