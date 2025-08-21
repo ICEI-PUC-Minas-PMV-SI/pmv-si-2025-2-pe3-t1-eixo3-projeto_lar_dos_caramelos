@@ -15,7 +15,11 @@ Descreva também o contexto em que essa aplicação será usada, se houver: empr
 
 ## 1.2. Objetivos do trabalho
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. O objetivo geral deve resumir e apresentar a ideia central de um trabalho, descrevendo também a sua finalidade. Os objetivos específicos darão uma maior delimitação ao tema, além de detalhar os processos necessários para a realização do trabalho.
+O principal objetivo da aplicação Lar dos Caramelos é oferecer uma interface interativa que permita aos usuários cadastrar cães disponíveis para adoção, informando dados essenciais como raça, idade, estado de saúde e demais características relevantes. Dessa forma, a pessoa interessada na adoção poderá visualizar claramente as condições do animal e escolher aquele com o qual mais se identifica.
+A plataforma busca conectar pessoas com necessidades complementares: de um lado, indivíduos que possuem um animal do qual não podem mais cuidar ou instituições que resgatam cães em situação de rua; de outro, pessoas que desejam ter um companheiro, mas optam pela adoção em vez da compra.
+Por meio dessa conexão, o projeto tem como meta reduzir o número de cães abandonados e evitar situações em que tutores, por motivos diversos, não possam mais cuidar de seus animais. Assim, garante-se que esses cães sejam encaminhados para lares responsáveis e amorosos, proporcionando segurança e tranquilidade para quem doa e felicidade para quem adota.
+
+
 
 ## 1.3. Justificativa
 
