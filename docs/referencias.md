@@ -12,8 +12,6 @@ Disponível em: https://www.cnnbrasil.com.br/nacional/brasil-tem-quase-185-mil-a
 
 **INSTITUTO FEDERAL CATARINENSE**. Site para Abrigo Animal: projeto de estudantes para facilitar adoções e doações. Santa Catarina: IFC, 2024. Disponível em: https://www.ifc.edu.br. Acesso em: 21 ago. 2025.
 
-**INSTITUTO PET BRASIL**. Mais de 30 milhões de animais vivem em situação de abandono no Brasil. São Paulo: Instituto Pet Brasil, 2023. Disponível em: https://www.institutopetbrasil.com. Acesso em: 21 ago. 2025.
-
 **SHELTER SOUL**. Plataforma internacional para gestão de adoções de animais. 2024. Disponível em: https://www.sheltersoul.org. Acesso em: 21 ago. 2025.
 
 **UNIVERSIDADE FEDERAL DO PARANÁ**. Infodados de Abrigos de Animais: banco de dados nacional sobre abrigos. Curitiba: UFPR, 2025. Disponível em: https://www.ufpr.br. Acesso em: 21 ago. 2025.
