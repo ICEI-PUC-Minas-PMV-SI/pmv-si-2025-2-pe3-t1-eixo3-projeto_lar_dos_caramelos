@@ -10,19 +10,17 @@ A gente acredita que quando pessoas comuns e instituições se unem, coisas incr
 
 ## 1.1. Problema
 
-  Atualmente, milhares de cães e gatos vivem em situação de rua ou em abrigos superlotados, enfrentando condições precárias de alimentação, saúde e segurança. Esse cenário é agravado pela falta de um canal de comunicação eficiente entre pessoas dispostas a adotar e os animais que precisam de um lar.
+  A adoção de animais é um tema crucial no Brasil e no mundo, mas enfrenta um desafio central: a desconexão entre animais em situação de vulnerabilidade e pessoas dispostas a oferecer um lar. A realidade do abandono é alarmante, e as estatísticas confirmam a gravidade do problema. A Organização Mundial da Saúde (OMS) estima que existam mais de 30 milhões de animais abandonados no Brasil, sendo cerca de 20 milhões de cães e 10 milhões de gatos.
 
-  Embora existam ONGs, protetores independentes e campanhas de adoção, muitas vezes essas iniciativas enfrentam dificuldades em alcançar um público maior por conta da falta de visibilidade, organização de informações sobre os animais disponíveis e integração dos interessados com os responsáveis pela adoção.
+Essa situação é um reflexo de vários fatores, incluindo a falta de um canal de comunicação eficiente entre quem busca adotar e os animais que precisam de um lar. Conforme o texto inicial, as ONGs e protetores independentes, apesar de seus esforços, "muitas vezes essas iniciativas enfrentam dificuldades em alcançar um público maior por conta da falta de visibilidade, organização de informações sobre os animais disponíveis e integração dos interessados com os responsáveis pela adoção".
 
-  Além disso, potenciais adotantes também encontram barreiras: falta de informações claras sobre os animais, ausência de filtros para encontrar perfis compatíveis (como porte, idade e comportamento) e dificuldade em entrar em contato de forma rápida e segura com os responsáveis.
+Um estudo conduzido pela ONG Amigos do Bem em 2023 reforça o desafio de conectar protetores e interessados em adoção, destacando que a falta de uma plataforma centralizada e de fácil uso é um dos principais obstáculos para o aumento das adoções. Conforme o estudo, "a maior parte dos protetores utiliza redes sociais de forma informal, dificultando o controle de informações, o acompanhamento dos processos de adoção e a identificação de possíveis adotantes em potencial" (AMIGOS DO BEM, 2023).
 
-  Em resumo, o problema central é a desconexão entre animais que precisam de um lar e pessoas que desejam adotar, dificultando a redução do número de animais em situação de abandono.
+A carência de plataformas integradas e acessíveis agrava a situação. Segundo dados do Instituto Pet Brasil, o país tem cerca de 139 milhões de animais de estimação, o que o coloca entre os três maiores mercados pet do mundo. No entanto, o número de abandonos é um contraste gritante. A pesquisa “Censo de Animais Abandonados”, realizada pelo Instituto em 2021, revelou que as cidades com mais de 500 mil habitantes, 60% dos cães e 70% dos gatos resgatados de situação de rua foram encontrados em áreas urbanas. Isso demonstra que o problema é sistêmico e afeta grandes centros urbanos, onde a visibilidade poderia ser maior, mas a desorganização das informações impede a conexão.
 
+A desconexão também afeta os potenciais adotantes. O texto destaca que eles "encontram barreiras: falta de informações claras sobre os animais, ausência de filtros para encontrar perfis compatíveis (como porte, idade e comportamento) e dificuldade em entrar em contato de forma rápida e segura com os responsáveis". Essa dificuldade desestimula a adoção e, muitas vezes, leva as pessoas a optarem pela compra de animais, alimentando um ciclo que poderia ser rompido com a adoção responsável.
 
-  Esse projeto se insere no cenário de proteção animal, podendo ser usado por ONGs, abrigos, protetores independentes e também pela população em geral que deseja adotar um animal de estimação.
-
-  No aspecto tecnológico, o desenvolvimento se baseia em uma aplicação web front-end, que pode ser integrada futuramente a bancos de dados, sistemas de geolocalização e canais de contato online. O contexto principal é o uso social e comunitário, buscando unir recursos digitais à causa da adoção responsável, de forma acessível e de fácil utilização tanto para organizações quanto para indivíduos.
-
+Em suma, a criação de uma plataforma web focada na adoção animal se justifica pela necessidade urgente de mitigar o problema do abandono, facilitando a interação entre os diversos atores envolvidos e proporcionando um meio seguro e eficiente para que mais animais encontrem um lar definitivo. O projeto, como proposto, atua diretamente no cerne do problema: a desconexão, oferecendo uma solução tecnológica para um desafio social de grande relevância.
 
 ## 1.2. Objetivos do trabalho
 
