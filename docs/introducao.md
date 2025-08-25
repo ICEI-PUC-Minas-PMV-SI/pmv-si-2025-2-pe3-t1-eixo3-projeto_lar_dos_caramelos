@@ -24,10 +24,7 @@ Em suma, a criação de uma plataforma web focada na adoção animal se justific
 
 ## 1.2. Objetivos do trabalho
 
-O principal objetivo da aplicação Lar dos Caramelos é oferecer uma interface interativa que permita aos usuários cadastrar cães disponíveis para adoção, informando dados essenciais como raça, idade, estado de saúde e demais características relevantes. Dessa forma, a pessoa interessada na adoção poderá visualizar claramente as condições do animal e escolher aquele com o qual mais se identifica.
-A plataforma busca conectar pessoas com necessidades complementares: de um lado, indivíduos que possuem um animal do qual não podem mais cuidar ou instituições que resgatam cães em situação de rua; de outro, pessoas que desejam ter um companheiro, mas optam pela adoção em vez da compra.
-Por meio dessa conexão, o projeto tem como meta reduzir o número de cães abandonados e evitar situações em que tutores, por motivos diversos, não possam mais cuidar de seus animais. Assim, garante-se que esses cães sejam encaminhados para lares responsáveis e amorosos, proporcionando segurança e tranquilidade para quem doa e felicidade para quem adota.
-
+Este trabalho tem como objetivo analisar o cenário da adoção de animais abandonados no Brasil e propor uma alternativa que una teoria e prática por meio do desenvolvimento de uma solução tecnológica. Busca-se, assim, compreender o problema em um contexto social mais amplo, discutir sua relevância e, a partir desse estudo, construir uma aplicação digital que auxilie na conexão entre adotantes, instituições e protetores independentes, promovendo a adoção responsável e contribuindo para o bem-estar animal.
 
 
 ## 1.3. Justificativa
