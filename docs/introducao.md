@@ -1,11 +1,13 @@
 # 1. INTRODUÇÃO
 
-   O abandono de cães é uma triste realidade no Brasil e, infelizmente, não é novidade para quem acompanha o dia a dia das ruas. Estima-se que mais de 30 milhões de animais vivam sem lar, segundo números divulgados por organizações como a OMS e grupos de proteção animal. Quem já tentou ajudar sabe: os abrigos estão lotados e as ONGs vivem fazendo milagres com poucos recursos.
+   O abandono de animais domésticos no Brasil configura-se como um grave problema social, ambiental e de saúde pública. Segundo pesquisa divulgada pela empresa Mars Petcare Brasil (2024), estima-se que mais de 30 milhões de cães e gatos vivem em situação de vulnerabilidade nas ruas do país. Esse número alarmante revela não apenas a dimensão da questão, mas também a urgência de ações coordenadas entre diferentes setores da sociedade.
 
-   No meio desse cenário difícil, os lares temporários surgem como um respiro. Eles oferecem não só um teto, mas também cuidado, carinho e a chance de o animal se recuperar até encontrar uma família definitiva. O Instituto Pet Brasil calcula que mais de 170 mil cães e gatos estejam hoje sob a proteção de voluntários e organizações. É muita gente e muito trabalho, mas cada vida salva faz diferença.
+   A atuação do setor privado tem se mostrado essencial na busca por soluções eficazes. De acordo com a diretora de Assuntos Corporativos da Mars Petcare, é necessário que as empresas adotem uma postura ativa, promovendo iniciativas voltadas à adoção responsável, à educação sobre cuidados com os animais e ao apoio direto a abrigos e projetos de acolhimento (Mars Petcare, 2024). A pesquisa também destaca a importância da conscientização da população sobre a posse responsável e da implementação de políticas públicas mais eficientes.
 
-   Foi para entrar nessa luta que nasceu o projeto **Lar dos Caramelos**. A ideia veio da vontade de abrir um espaço seguro e acolhedor para animais resgatados de situações extremas. Aqui, eles recebem mais do que ração e remédio: ganham atenção, brincadeiras, socialização e tudo o que precisam para se reerguer. E isso aumenta e muito as chances de adoção.
-A gente acredita que quando pessoas comuns e instituições se unem, coisas incríveis acontecem. Cada lar temporário é como uma ponte entre o abandono e um novo começo. 
+   Nesse contexto, a tecnologia surge como uma aliada promissora. Ferramentas digitais têm sido desenvolvidas para facilitar o processo de adoção, organizar abrigos, estimular doações e promover o voluntariado. Tais plataformas aproximam adotantes em potencial de animais que necessitam de um lar, tornando o processo mais transparente, seguro e eficiente.
+
+   Diante desse cenário, propõe-se a criação de uma plataforma web para o abrigo temporário **Lar dos Caramelos**, voltado à adoção de cães resgatados. A proposta visa utilizar a tecnologia de forma estratégica para promover o bem-estar animal, oferecendo um sistema intuitivo, com informações completas sobre os animais, orientações sobre cuidados e suporte durante o processo de adoção. Ao unir empatia, inovação e responsabilidade, a plataforma busca ampliar as chances de adoção, dar visibilidade aos animais acolhidos e contribuir concretamente para a redução do abandono de animais no Brasil.
+
 
 
 ## 1.1. Problema
