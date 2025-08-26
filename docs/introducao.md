@@ -6,7 +6,7 @@
 
    Nesse contexto, a tecnologia surge como uma aliada promissora. Ferramentas digitais têm sido desenvolvidas para facilitar o processo de adoção, organizar abrigos, estimular doações e promover o voluntariado. Tais plataformas aproximam adotantes em potencial de animais que necessitam de um lar, tornando o processo mais transparente, seguro e eficiente.
 
-   Diante desse cenário, propõe-se a criação de uma plataforma web para o abrigo temporário **Lar dos Caramelos**, voltado à adoção de cães resgatados. A proposta visa utilizar a tecnologia de forma estratégica para promover o bem-estar animal, oferecendo um sistema intuitivo, com informações completas sobre os animais, orientações sobre cuidados e suporte durante o processo de adoção. Ao unir empatia, inovação e responsabilidade, a plataforma busca ampliar as chances de adoção, dar visibilidade aos animais acolhidos e contribuir concretamente para a redução do abandono de animais no Brasil.
+   Diante desse cenário, o projeto de plataforma web para o abrigo temporário **Lar dos Caramelos**, voltado à adoção de cães resgatados visa utilizar a tecnologia de forma estratégica para promover o bem-estar animal, oferecendo um sistema intuitivo, com informações completas sobre os animais, orientações sobre cuidados e suporte durante o processo de adoção. Ao unir empatia, inovação e responsabilidade, a plataforma busca ampliar as chances de adoção, dar visibilidade aos animais acolhidos e contribuir concretamente para a redução do abandono de animais no Brasil.
 
 
 
@@ -22,7 +22,6 @@ A carência de plataformas integradas e acessíveis agrava a situação. Segundo
 
 A desconexão também afeta os potenciais adotantes. O texto destaca que eles "encontram barreiras: falta de informações claras sobre os animais, ausência de filtros para encontrar perfis compatíveis (como porte, idade e comportamento) e dificuldade em entrar em contato de forma rápida e segura com os responsáveis". Essa dificuldade desestimula a adoção e, muitas vezes, leva as pessoas a optarem pela compra de animais, alimentando um ciclo que poderia ser rompido com a adoção responsável.
 
-Em suma, a criação de uma plataforma web focada na adoção animal se justifica pela necessidade urgente de mitigar o problema do abandono, facilitando a interação entre os diversos atores envolvidos e proporcionando um meio seguro e eficiente para que mais animais encontrem um lar definitivo. O projeto, como proposto, atua diretamente no cerne do problema: a desconexão, oferecendo uma solução tecnológica para um desafio social de grande relevância.
 
 ## 1.2. Objetivos do trabalho
 
@@ -31,8 +30,15 @@ Este trabalho tem como objetivo analisar o cenário da adoção de animais aband
 
 ## 1.3. Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+O desenvolvimento de uma plataforma web para o abrigo temporário Lar dos Caramelos é motivado pela necessidade crítica de enfrentar o abandono de animais no Brasil, um problema que, segundo a Mars Petcare Brasil (2024), afeta mais de 30 milhões de cães e gatos em situação de rua. A iniciativa se justifica pela oportunidade de usar a tecnologia para conectar animais resgatados a potenciais adotantes, promovendo a posse responsável e reduzindo a desconexão identificada como um obstáculo central, conforme apontado pelo estudo da ONG Amigos do Bem (2023).
+
+A escolha por uma aplicação web decorre da necessidade de oferecer um canal centralizado, acessível e intuitivo, que supere as limitações das redes sociais usadas de forma informal por protetores, como destacado no estudo. A plataforma visa organizar informações sobre os animais, facilitar o contato com responsáveis e proporcionar uma experiência transparente, incentivando a adoção responsável. Este projeto é relevante por seu impacto social, melhorando o bem-estar animal e conscientizando a sociedade, além de oferecer um modelo escalável para outras iniciativas de adoção no Brasil.
 
 ## 1.4. Público alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
+O público-alvo da plataforma **Lar dos Caramelos** é composto por pessoas interessadas em adotar cães resgatados, protetores independentes, ONGs e abrigos que atuam no acolhimento e cuidado de animais em situação de vulnerabilidade. A solução também se destina a voluntários e apoiadores da causa animal, que buscam contribuir de forma ativa para a redução do abandono e para o bem-estar dos animais.
+
+A plataforma é voltada principalmente para adultos e famílias residentes em áreas urbanas, especialmente aqueles que valorizam a adoção responsável e desejam informações claras e seguras sobre os animais disponíveis. Além disso, contempla protetores e instituições que necessitam de um canal organizado para divulgar animais resgatados, gerenciar processos de adoção e ampliar o alcance de suas ações.
+
+Ao reunir esses diferentes perfis, o projeto visa criar uma rede colaborativa, facilitando a comunicação, promovendo a transparência e incentivando a adoção consciente, contribuindo para transformar a realidade dos animais abandonados.
+
