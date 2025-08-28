@@ -8,7 +8,7 @@
 
 **ORGANIZAÇÃO MUNDIAL DA SAÚDE (OMS**). Estatísticas de animais abandonados no Brasil, 2024. Disponível em: [https://www.who.int/]. Acesso em: 25 ago. 2025.
 
-**Pinto, Leonardo B. C; Ferreira, Aluane S.; & Dodonov, Pavel (2024)**. Abandono de cães e gatos: levantamento bibliográfico e documental sobre causas, implicações e experiências de gestão no Brasil e no mundo. Farol – Revista de Estudos Organizacionais e Sociedade, Belo Horizonte, v. 11, n. 30, p. 1-22, abr. 2024. DOI: https://doi.org/10.25113/farol.v11i30.7841. Acesso em: 25 ago. 2025.
+**Pinto, Leonardo B. C; Ferreira, Aluane S.; & Dodonov, Pavel (2024)**. Abandono de cães e gatos: levantamento bibliográfico e documental sobre causas, implicações e experiências de gestão no Brasil e no mundo. Farol – Revista de Estudos Organizacionais e Sociedade, Belo Horizonte, v. 11, n. 30, p. 1-22, abr. 2024. https://revistas.face.ufmg.br/index.php/farol/article/view/7841 . Acesso em: 25 ago. 2025.
 
 **Ampara Animal**
 [https://institutoamparanimal.org.br/] Acesso em: 26 ago. 2025.
