@@ -2,7 +2,6 @@
 
 **MARS PETCARE BRASIL**. Mais de 30 milhões de animais vivem em situação de abandono no Brasil, mostra pesquisa da Mars Petcare. Valor Econômico, 13 dez. 2024. Conteúdo de marca. Disponível em: https://valor.globo.com/conteudo-de-marca/mars-petcare/noticia/2024/12/13/mais-de-30-milhoes-de-animais-vivem-em-situacao-de-abandono-no-brasil-mostra-pesquisa-da-mars-petcare.ghtml. Acesso em: 26 ago. 2025.
 
-**AMIGOS DO BEM (Brasil)**. Relatório sobre adoção de animais em centros urbanos, 2023. Disponível em: [https://amigosdobem.org.br/]. Acesso em: 25 ago. 2025.
 
 **INSTITUTO PET BRASIL**. Censo de Animais Abandonados, 2021. Disponível em: [https://institutopetbrasil.com/]. Acesso em: 25 ago. 2025.
 
