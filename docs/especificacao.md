@@ -29,22 +29,21 @@ O produto será condicionado ao cadastro apenas de cachorros, disponibilizando o
 
 | Código | Requisito Funcional (Funcionalidade) | Descrição |
 |--------------------|------------------------------------|----------------------------------------|
-| RF1 | Gerenciar cães |	Processamento de Inclusão, Alteração, Exclusão de cães para adoção |
+| RF1 | Gerenciar Anúncios de Cães |	Processamento de Inclusão, Alteração, Exclusão de cães para adoção |
 | RF2 |	Gerenciar  usuários| Processamento de inclusão,alteração,exclusão de conta dos usuários |
-| RF3	| Contador de cães |	O sistema deve possuir uma variável com visualização disponível que registre a quantidade de cães adotados |
-| RF4 |	Filtrar cães 	| O sistema deve permitir que o usuário pesquise e filtre os cães disponíveis para adoção com base em sua preferência |
+| RF3	| Contar Cães adotados |	O sistema deve possuir uma variável com visualização disponível que registre a quantidade de cães adotados |
+| RF4 |	Filtrar cães para Adoção 	| O sistema deve permitir que o usuário pesquise e filtre os cães disponíveis para adoção com base em sua preferência |
 | RF5 |	Favoritar cães	| O usuário deve poder favoritar pets para visualizar posteriormente |
-| RF6 |	Apadrinhamento	| O sistema deve oferecer a opção de apadrinhamento ao usuário |
-| RF7 |	Dicas cuidados pets	| O sistema deve possuir uma aba com dicas e informações sobre como cuidar do pet |
-| RF8 |	Localizar animais	| O sistema deve exibir animais disponíveis próximos ao endereço do adotante |
-| RF9 |	Status pets	| O sistema deve exibir o status atual do cão para adoção |
-| RF10 |	Gerenciar eventos	| O sistema deve permitir o cadastro e a divulgação de feiras/eventos de adoção |
-| RF11 |	Gerenciar denúncias | O sistema deve possuir uma aba de denúncias de maus-tratos contra animais |
-| RF12 |	Gerenciar histórias	| O sistema deve exibir histórias e fotos de pets já adotados |
+| RF6 |	Apadrinhar Cães	| O sistema deve oferecer a opção de apadrinhamento ao usuário |
+| RF7 |	Gerenciar Dicas Pets	| O sistema deve possuir uma aba com dicas e informações sobre como cuidar do pet |
+| RF8 |	Localizar Cães para Adoção	| O sistema deve exibir animais disponíveis próximos ao endereço do adotante |
+| RF9 |	Definir Status dos Cães	| O sistema deve exibir o status atual do cão para adoção |
+| RF10 |	Gerenciar Anúncio Eventos	| Processamento de inclusão, alteração, exclusão de anúncios de divulgação de feiras/eventos de adoção |
+| RF11 |	Gerenciar Anúncios de denúncias de Maus Tratos | Processamento de inclusão, alteração, exclusão de anúncios de denúncias de maus tratos contra animais |
+| RF12 |	Gerenciar histórias Cães adotados	| O sistema deve exibir histórias e fotos de pets já adotados |
 | RF13 |	Login	| O sistema deve permitir que o usuário realize login informando um identificador único e senha cadastrados previamente|
 | RF14 |	Logout	| O sistema deve permitir que o usuário encerre sua sessão de forma segura, garantindo que terceiros não consigam acessar o sistema sem nova autenticação |
-| RF15 |	Validar Senha	| O sistema deve validar a senha informada pelo usuário comparando-a com o valor armazenado de forma segura |
-| RF16 |	Recomendar Cães	| O sistema deve recomendar cães disponíveis para adoção, considerando as informações fornecidas pelo usuário (como estilo de vida, espaço disponível, experiência com animais, presença de crianças, objetivo da adoção) e os dados cadastrados sobre os animais (porte, idade, temperamento, necessidades especiais, histórico..)|
+| RF16 |	Recomendar Cães para adoção	| O sistema deve recomendar cães disponíveis para adoção, considerando as informações fornecidas pelo usuário (como estilo de vida, espaço disponível, experiência com animais, presença de crianças, objetivo da adoção) e os dados cadastrados sobre os animais (porte, idade, temperamento, necessidades especiais, histórico)|
 
 
 ### 3.3.2 Requisitos Não Funcionais
@@ -64,6 +63,7 @@ O produto será condicionado ao cadastro apenas de cachorros, disponibilizando o
 |--------------------|------------------------------------|
 | Usuário |	Usuário responsável por incluir,alterar e excluir dados do sistema. |
 | Administrador |	Usuário gerente do sistema responsável manutenção,possuindo acesso geral ao sistema. |
+| Tempo |	Atualização do sistema |
 
 
 ## 3.4 Modelagem do Sistema
