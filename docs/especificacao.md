@@ -435,6 +435,9 @@ c) O Sistema remove o anúncio da listagem pública.
 *Fluxo Alternativo (3): Consulta*  
 a) O Usuário acessa a listagem de eventos.  
 b) O Sistema apresenta os anúncios ativos.
+
+Pós-condições: O anúncio foi incluído, alterado, excluído ou consultado.
+
 # CSU11 - Gerenciar Anúncios de Denúncias de Maus Tratos
 
 *Sumário:* O Usuário realiza a gestão (inclusão, alteração, exclusão e consulta) de anúncios de denúncias de maus tratos contra animais.  
