@@ -614,15 +614,6 @@ b) O Sistema informa ao Usuário que não há resultados e sugere ajustar os fil
 *Pós-condições:* O Usuário recebeu uma lista de cães recomendados ou foi informado da ausência de correspondências.
 
 
-
-# Definir Status dos Cães
-
-*Sumário:* O Usuário pode definir ou alterar o status de um cão (Disponível, Aguardando Adoção, Adotado, etc.).  
-
-*Ator Primário:* Usuário.  
-*Ator Secundário:* Sistema.  
-*Pré-condições:* O Usuário deve estar autenticado no sistema.
-
 ### 3.4.3 Diagrama de Classes 
 
 O diagrama de classes do sistema possui diversas entidades relacionadas ao processo de adoção, apadrinhamento e interação com cães disponíveis. A classe principal é Usuário, que contém atributos como nome, e-mail, senha e telefone, além de métodos para operações de cadastro, atualização de dados, exclusão de conta e funcionalidades específicas, como adotar animais, cadastrar cães e favoritar cães. O usuário pode ter perfil de administrador, diferenciando seus privilégios no sistema.
