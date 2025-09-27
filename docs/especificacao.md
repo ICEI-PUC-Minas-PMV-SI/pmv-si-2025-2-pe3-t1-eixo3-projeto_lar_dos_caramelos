@@ -135,11 +135,15 @@ A Figura 2 mostra o diagrama de classes do sistema. A Matrícula deve conter a i
 
 ### 3.4.4 Descrições das Classes 
 
-| # | Nome | Descrição |
-|--------------------|------------------------------------|----------------------------------------|
-| 1	|	Aluno |	Cadastro de informações relativas aos alunos. |
-| 2	| Curso |	Cadastro geral de cursos de aperfeiçoamento. |
-| 3 |	Matrícula |	Cadastro de Matrículas de alunos nos cursos. |
-| 4 |	Turma |	Cadastro de turmas.
-| 5	|	Professor |	Cadastro geral de professores que ministram as disciplinas. |
-| ... |	... |	... |
+| Nº | Nome da Classe     | Descrição                                                                 |
+|----|---------------------|---------------------------------------------------------------------------|
+| 1  | Usuario           | Representa os usuários da plataforma, podendo ser adotantes, doadores ou administradores. Contém dados pessoais e métodos de interação. |
+| 2  | Endereco          | Armazena os dados de localização dos usuários, como rua, número, cidade e estado. Está relacionado com o usuário. |
+| 3  | Cachorro          | Representa os cães disponíveis para adoção, com atributos como nome, raça, idade, saúde, peso e status. |
+| 4  | Anuncio_Caes      | Representa um anúncio de um cão para adoção feito por um usuário. Está vinculado a um cão e um usuário. |
+| 5  | Apadrinhamento    | Representa a ação de um usuário apadrinhar um cachorro, com valor de contribuição. |
+| 6  | Mensagem          | Gerencia a comunicação entre adotantes e doadores. Contém mensagens trocadas e referências aos dois usuários envolvidos. |
+| 7  | Evento            | Representa eventos ou feiras de adoção cadastradas por usuários. Contém descrição, data e imagens. |
+| 8  | Dicas_Pets        | Representa dicas de cuidados com pets cadastradas por administradores para os usuários. |
+| 9  | Denuncia          | Permite que usuários registrem denúncias de maus tratos, com descrição, data e imagens. |
+| 10 | Historia_Caes     | Armazena histórias e fotos de cães que já foram adotados, postadas pelos adotantes. |
