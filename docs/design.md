@@ -2,10 +2,16 @@
 
 ## 4.1 Personas
 <img width="1393" height="785" alt="image" src="https://github.com/user-attachments/assets/d409ee94-0c6f-4556-ad31-62bd9a4d0b1f" />
+<img width="1022" height="566" alt="image" src="https://github.com/user-attachments/assets/b87239f6-cc31-4019-a3be-d8666e775b6d" />
+
+
 
 
 ## 4.2 Mapa de Empatia
 <img width="1395" height="783" alt="image" src="https://github.com/user-attachments/assets/2e7487e2-90bc-4357-a0d9-edc22516726c" />
+<img width="1028" height="571" alt="image" src="https://github.com/user-attachments/assets/4ea596d1-12ba-4209-b9f2-55b4f4900282" />
+
+
 
 
 ## 4.3 Protótipos das Interfaces
