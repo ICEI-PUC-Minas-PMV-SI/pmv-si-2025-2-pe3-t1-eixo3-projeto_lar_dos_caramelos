@@ -3,6 +3,7 @@
 ## 4.1 Personas
 <img width="1384" height="777" alt="image" src="https://github.com/user-attachments/assets/a290a20d-82f5-47b7-a3fe-39efe1e325a9" />
 <img width="1022" height="566" alt="image" src="https://github.com/user-attachments/assets/b87239f6-cc31-4019-a3be-d8666e775b6d" />
+<img width="1257" height="683" alt="image" src="https://github.com/user-attachments/assets/9c686833-0fb2-443f-9e39-c7472ef55b84" />
 
 
 
@@ -10,6 +11,7 @@
 ## 4.2 Mapa de Empatia
 <img width="1383" height="771" alt="image" src="https://github.com/user-attachments/assets/38a6e796-d142-4eb2-8359-73d8c2a4cacd" />
 <img width="1028" height="571" alt="image" src="https://github.com/user-attachments/assets/4ea596d1-12ba-4209-b9f2-55b4f4900282" />
+<img width="1152" height="696" alt="image" src="https://github.com/user-attachments/assets/4565872e-7366-42e3-9eb9-6bb0b9d0ffea" />
 
 
 
