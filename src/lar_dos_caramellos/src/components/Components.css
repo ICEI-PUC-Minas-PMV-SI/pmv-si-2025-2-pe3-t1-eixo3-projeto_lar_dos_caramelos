@@ -1,0 +1,7 @@
+/* navbar.css */
+.text-orange {
+  color: #ff7b00 !important; /* seu laranja */
+}
+.text-orange:hover {
+  color: #e96a00 !important; /* tom mais escuro ao passar o mouse */
+}
