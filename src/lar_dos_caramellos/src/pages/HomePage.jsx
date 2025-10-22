@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import cachorro from "/home/rc/Login-React/cachorro.jpg";
+import cachorro from "../assets/cachorro.jpg";
 import '../App.css'
 import { Heart, Users, Home as HomeIcon, Award } from "lucide-react";
 import Footer from "../components/FooterComponent";
