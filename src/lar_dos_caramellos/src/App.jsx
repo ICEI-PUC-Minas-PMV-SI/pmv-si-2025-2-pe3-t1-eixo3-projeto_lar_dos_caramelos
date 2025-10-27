@@ -10,6 +10,7 @@ import RegisterPage from './pages/registerPage';
 import CardRegisterPage from './pages/CardRegisterPage';
 import Navbar from './components/NavbarComponent.jsx';
 import HomePage from './pages/HomePage.jsx';
+import Eventos from './pages/Eventos.jsx';
 
 function App() {
 
@@ -35,7 +36,7 @@ function App() {
         <Route path ='/register' element= {<RegisterPage/>} />
 
       <Route path ='/regCard' element= {<CardRegisterPage/>} />
-
+      <Route path='/eventos' element={<Eventos />} />
       </Routes>
 
       
