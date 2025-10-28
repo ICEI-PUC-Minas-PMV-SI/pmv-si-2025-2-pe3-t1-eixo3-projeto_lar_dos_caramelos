@@ -50,9 +50,9 @@ const Historias = () => {
 
       <main className="flex-grow-1">
         {/* Hero Section */}
-        <section className="bg-gradient py-5 text-center">
+        <section className="bg-gradient py-5 text-center" style={{ background:"#fff3cd" }} >
           <div className="container">
-            <Heart size={64} className="text-primary mb-3" fill="currentColor" />
+            <Heart size={64} color="#f58f01ff" fill="#f58f01ff" className="mb-3" />
             <h1 className="fw-bold display-5 mb-3">Histórias de Adoção</h1>
             <p className="text-muted fs-5">
               Histórias reais de amor, transformação e felicidade. Inspire-se e
@@ -61,20 +61,21 @@ const Historias = () => {
           </div>
         </section>
 
-        {/* Statistics Section */}
-        <section className="py-5 bg-primary-subtle">
+        {/* Statistics Section  "#fff3cd" */}
+        <section className="py-5 "style={{ background:"#fff3cd" }} >  
+
           <div className="container text-center">
             <div className="row g-4">
               <div className="col-md-4">
-                <h2 className="fw-bold text-primary">150+</h2>
+                <h2 className="fw-bold text-color=black">150+</h2>
                 <p className="text-muted">Cães Adotados</p>
               </div>
               <div className="col-md-4">
-                <h2 className="fw-bold text-primary">200+</h2>
+                <h2 className="fw-bold text-color=black">200+</h2>
                 <p className="text-muted">Famílias Felizes</p>
               </div>
               <div className="col-md-4">
-                <h2 className="fw-bold text-primary">5 Anos</h2>
+                <h2 className="fw-bold text-color=black">5 Anos</h2>
                 <p className="text-muted">Transformando Vidas</p>
               </div>
             </div>
@@ -132,7 +133,7 @@ const Historias = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-5 bg-primary-subtle text-center">
+        <section className="py-5 text-center" style={{ background:"#fff3cd" }} >
           <div className="container">
             <h2 className="fw-bold mb-3">Escreva Sua Própria História</h2>
             <p className="text-muted fs-5 mb-4 mx-auto" style={{ maxWidth: "700px" }}>
@@ -140,11 +141,13 @@ const Historias = () => {
               Venha conhecer nossos cães disponíveis e encontre seu novo melhor
               amigo.
             </p>
+
             <div className="d-flex justify-content-center gap-3 flex-wrap">
-              <a href="/caes" className="btn btn-primary px-4 py-2">
+              <a href="/caes" className="btn text-white px-4 py-2 fw-semibold" style={{ backgroundColor:"orange"}}> 
+
                 Conhecer Cães Disponíveis
               </a>
-              <a href="/dicas" className="btn btn-outline-primary px-4 py-2">
+              <a href="/dicas" className="btn btn-outline-secondary px-4 py-2 fw-semibold">
                 Dicas de Cuidados
               </a>
             </div>
