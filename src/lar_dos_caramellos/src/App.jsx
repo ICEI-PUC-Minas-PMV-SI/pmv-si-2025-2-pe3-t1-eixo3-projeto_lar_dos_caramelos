@@ -9,6 +9,7 @@ import NavbarComponent from './components/NavbarComponent';
 import HomePage from './pages/HomePage';
 import EventosPage from './pages/Eventos';
 import DicasPetsPage from './pages/DicasPetsPage';
+import Apadrinhe from './pages/Apadrinhe';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/register-card' element={<CardRegisterPage />} />
           <Route path='/eventos' element={<EventosPage />} />
           <Route path='/dicas' element={<DicasPetsPage />} />
+          <Route path='/apadrinhe' element={<Apadrinhe />} />
         </Routes>
       </BrowserRouter>
     </>
