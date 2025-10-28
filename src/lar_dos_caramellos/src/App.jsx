@@ -13,6 +13,7 @@ import Historias from './pages/HistoriasPage';
 
 
 
+import Apadrinhe from './pages/Apadrinhe';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path='/dicas' element={<DicasPetsPage />} />
           <Route path='/historias' element={<Historias />} />
 
+          <Route path='/apadrinhar' element={<Apadrinhe />} />
         </Routes>
       </BrowserRouter>
     </>

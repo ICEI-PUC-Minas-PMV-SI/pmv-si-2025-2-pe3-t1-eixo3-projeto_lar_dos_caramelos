@@ -68,7 +68,7 @@ function DicasPetsPage() {
         {/* Hero Section */}
         <section
           className="text-center py-5"
-          style={{ backgroundColor: "#f4f0dd" }}
+          style={{ backgroundColor: "#fff3cd" }}
         >
           <div className="container">
             <Heart
@@ -88,7 +88,7 @@ function DicasPetsPage() {
         </section>
 
         {/* Pet Tips Section */}
-        <section className="py-5" style={{ backgroundColor: "#f4f0dd" }}>
+        <section className="py-5" style={{ backgroundColor:"#fff3cd" }}>
           <div className="container">
             <h2 className="text-center fw-bold mb-4">
               Guia Completo de Cuidados
