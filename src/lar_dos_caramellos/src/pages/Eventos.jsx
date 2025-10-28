@@ -9,6 +9,7 @@ import hero from "../assets/hero-dogs.jpg";
 import dog1 from "../assets/dog-1.jpg";
 import dog2 from "../assets/dog-2.jpg";
 import dog3 from "../assets/dog-3.jpg";
+import { redirect } from "react-router-dom";
 
 // import heroImage from "../assets/hero.jpg"; // se quiser imagem no topo
 
@@ -61,10 +62,10 @@ const Eventos = () => {
       <section
         className="text-white text-center py-5"
         style={{
-          background: "linear-gradient(90deg, #ff7b00 0%, #ff9a5c 100%)",
+          background:"#fff3cd",
         }}
       >
-        <div className="container">
+        <div className="container text-dark">
           <h1 className="display-5 fw-bold mb-3">Eventos de Adoção</h1>
           <p className="lead mx-auto" style={{ maxWidth: "700px" }}>
             Participe dos nossos eventos e encontre seu novo melhor amigo!

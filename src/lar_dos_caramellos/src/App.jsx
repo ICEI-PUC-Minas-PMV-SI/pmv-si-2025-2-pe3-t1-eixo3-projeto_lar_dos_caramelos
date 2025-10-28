@@ -24,7 +24,7 @@ function App() {
           <Route path='/register-card' element={<CardRegisterPage />} />
           <Route path='/eventos' element={<EventosPage />} />
           <Route path='/dicas' element={<DicasPetsPage />} />
-          <Route path='/apadrinhe' element={<Apadrinhe />} />
+          <Route path='/apadrinhar' element={<Apadrinhe />} />
         </Routes>
       </BrowserRouter>
     </>

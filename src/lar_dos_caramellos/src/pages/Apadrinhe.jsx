@@ -83,13 +83,13 @@ const Apadrinhe = () => {
 
   return (
     <div className="d-flex flex-column min-vh-100 bg-light">
-      <Navbar />
+     
 
       <main className="flex-fill">
         {/* Hero */}
         <section className="py-5 text-center bg-warning-subtle">
           <div className="container">
-            <Heart size={64} color="#dc3545" className="mb-3" />
+            <Heart size={64} color="#f58f01ff" fill="#f58f01ff" className="mb-3" />
             <h1 className="fw-bold mb-3">Seja um Padrinho</h1>
             <p className="lead text-muted">
               Não pode adotar mas quer ajudar? Apadrinhe um pet e faça a
