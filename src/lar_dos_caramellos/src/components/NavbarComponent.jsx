@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Heart, Menu, X } from "lucide-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Components.css";
-
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-md bg-light border-bottom shadow-sm sticky-top"   style={{ minHeight: "70px" }} >
       <div className="container">
         {/* Logo */}
-        <Heart className="text-orange me-2 full" size={28} fill="currentColor" />
+        <img src={logo} alt="Logo" style={{ height: "50px", marginRight: "10px" }} />
         <Link to="/" className="navbar-brand d-flex align-items-center gap-2"  > 
             
           <span className="fw-bold fs-5 text-dark">Lar dos Caramellos</span>

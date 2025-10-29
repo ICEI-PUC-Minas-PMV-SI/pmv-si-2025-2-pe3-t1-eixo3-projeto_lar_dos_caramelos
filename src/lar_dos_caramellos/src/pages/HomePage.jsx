@@ -113,22 +113,10 @@ const HomePage = () => {
               </Card>
             </div>
             <div className="col-md-3">
-              <Card className="h-100">
-                <CardContent className="py-4">
-                  <HomeIcon className="text-orange mb-2" size={48} />
-                  <h3 className="display-6">450+</h3>
-                  <p className="text-secondary">Famílias Felizes</p>
-                </CardContent>
-              </Card>
+             
             </div>
             <div className="col-md-3">
-              <Card className="h-100">
-                <CardContent className="py-4">
-                  <Award className="text-orange mb-2" size={48} />
-                  <h3 className="display-6">156</h3>
-                  <p className="text-secondary">Padrinhos Ativos</p>
-                </CardContent>
-              </Card>
+              
             </div>
           </div>
         </div>
@@ -153,13 +141,13 @@ const HomePage = () => {
                       <span className="fw-bold text-orange fs-4">{step}</span>
                     </div>
                     <h3 className="fw-bold mb-2">
-                      {step === 1 ? "Encontre seu Pet" : step === 2 ? "Faça uma Visita" : "Leve para Casa"}
+                      {step === 1 ? "Encontre seu Pet" : step === 2 ? "Contate o doador" : "Leve para Casa"}
                     </h3>
                     <p className="text-secondary">
                       {step === 1
                         ? "Navegue pelos perfis e use filtros para encontrar o cão ideal para sua família"
                         : step === 2
-                        ? "Agende uma visita para conhecer o cão pessoalmente e ver a conexão acontecer"
+                        ? "Entre em contato com o doador para conhecer mais sobre o cão e combinar a adoção"
                         : "Complete o processo de adoção e leve seu novo amigo para casa com muito amor"}
                     </p>
                   </CardContent>

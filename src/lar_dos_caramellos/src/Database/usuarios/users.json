@@ -5,6 +5,24 @@
       "name": "Pedro Augusto",
       "email": "teste@gmail.com",
       "password": "1234567"
+    },
+    {
+      "id": "a19b",
+      "nome": "Lauriano Gomes De Oliveira",
+      "email": "helderalvesdeoliveira@hotmail.com",
+      "cpf": "58475419615",
+      "telefone": "3133189660",
+      "senha": "11111111111",
+      "confirmarSenha": "11111111111"
+    },
+    {
+      "id": "afb6",
+      "nome": "Lauriano Gomes De Oliveira",
+      "email": "helderalvesdeoliveira@hotmail.com",
+      "cpf": "11111111111",
+      "telefone": "3133189660",
+      "senha": "11111111111",
+      "confirmarSenha": "11111111111"
     }
   ]
 }
