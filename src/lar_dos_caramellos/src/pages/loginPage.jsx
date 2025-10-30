@@ -1,14 +1,49 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { Heart, Route } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
+import { Heart } from "lucide-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
 const Login = () => {
-  const [isLogin, setIsLogin] = useState(true);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
+
+  // Função para verificar o login no JSON Server
+  const handleLogin = async () => {
+    if (!email || !password) {
+      setError("Por favor, preencha todos os campos.");
+      return;
+    }
+
+    try {
+      const response = await fetch(`http://localhost:3001/users?email=${email}`);
+      const data = await response.json();
+
+      if (data.length === 0) {
+        setError("Usuário não encontrado.");
+        return;
+      }
+
+      const user = data[0];
+      if (user.password === password) {
+        setError("");
+        alert(`Bem-vindo(a), ${user.name}!`);
+        navigate("/home"); // redireciona pra página principal (ajuste se precisar)
+      } else {
+        setError("Senha incorreta.");
+      }
+    } catch (err) {
+      console.error("Erro ao conectar com o servidor:", err);
+      setError("Erro ao conectar com o servidor. Verifique se o JSON Server está rodando.");
+    }
+  };
 
   return (
-    <div className="d-flex align-items-center justify-content-center min-vh-100  bg-gradient p-3"   style={{ backgroundColor: "#fff5e6" }} >
+    <div
+      className="d-flex align-items-center justify-content-center min-vh-100 bg-gradient p-3"
+      style={{ backgroundColor: "#fff5e6" }}
+    >
       <div className="w-100" style={{ maxWidth: "420px" }}>
         {/* Logo */}
         <div className="text-center mb-4">
@@ -21,47 +56,57 @@ const Login = () => {
         {/* Card */}
         <div className="card shadow border-0">
           <div className="card-header bg-white text-center border-0 pt-4">
-            <h4 className="fw-bold mb-1">{isLogin ? "Entrar" : "Criar Conta"}</h4>
-            <p className="text-secondary mb-0">
-              {isLogin
-                ? "Entre com sua conta para continuar"
-                : "Crie sua conta para adotar um amigo"}
-            </p>
+            <h4 className="fw-bold mb-1">Entrar</h4>
+            <p className="text-secondary mb-0">Entre com sua conta para continuar</p>
           </div>
 
           <div className="card-body px-4 pb-4">
-            {!isLogin && (
-              <div className="mb-3">
-                <label htmlFor="name" className="form-label fw-semibold">
-                  Nome Completo
-                </label>
-                <input type="text" className="form-control" id="name" placeholder="Seu nome" />
-              </div>
-            )}
-
             <div className="mb-3">
               <label htmlFor="email" className="form-label fw-semibold">
                 E-mail
               </label>
-              <input type="email" className="form-control" id="email" placeholder="seu@email.com" />
+              <input
+                type="email"
+                className="form-control"
+                id="email"
+                placeholder="seu@email.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
-          
+
             <div className="mb-3">
               <label htmlFor="password" className="form-label fw-semibold">
                 Senha
               </label>
-              <input type="password" className="form-control" id="password" placeholder="••••••••" />
+              <input
+                type="password"
+                className="form-control"
+                id="password"
+                placeholder="••••••••"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </div>
-            
 
-          
-              <div className="text-end mb-3">
-                <Link to="/recuperar-senha" className="text-decoration-none small text-primary">
-                  Esqueci minha senha
-                </Link>
+            {/* Mensagem de erro */}
+            {error && (
+              <div className="alert alert-danger py-2" role="alert">
+                {error}
               </div>
+            )}
 
-            <button type="button" className="btn btn-primary w-100 py-2 fw-semibold">
+            <div className="text-end mb-3">
+              <Link to="/recuperar-senha" className="text-decoration-none small text-primary">
+                Esqueci minha senha
+              </Link>
+            </div>
+
+            <button
+              type="button"
+              className="btn btn-primary w-100 py-2 fw-semibold"
+              onClick={handleLogin}
+            >
               Entrar
             </button>
           </div>
@@ -69,22 +114,14 @@ const Login = () => {
           <div className="card-footer bg-white border-0 text-center pb-4">
             <p className="text-secondary small mb-0">
               Não tem uma conta?
-             <Link
-             to="/register"
-              >
-                   <button
-                type="button"
-                className="btn btn-link p-0 text-primary fw-semibold text-decoration-none"
-              >
-                Criar conta
-              </button>
-
-
-
+              <Link to="/register">
+                <button
+                  type="button"
+                  className="btn btn-link p-0 text-primary fw-semibold text-decoration-none"
+                >
+                  Criar conta
+                </button>
               </Link>
-             
-             
-           
             </p>
           </div>
         </div>
@@ -116,12 +153,7 @@ const Login = () => {
           border-color: #ffae42;
         }
       `}</style>
-    
-
-    
     </div>
-
-       
   );
 };
 

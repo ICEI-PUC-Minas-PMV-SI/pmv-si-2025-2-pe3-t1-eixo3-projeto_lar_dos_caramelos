@@ -23,6 +23,15 @@
       "telefone": "3133189660",
       "senha": "11111111111",
       "confirmarSenha": "11111111111"
+    },
+    {
+      "id": "0f6c",
+      "nome": "Pedro Augusto Alves Oliveira Calazans",
+      "email": "helderalvesdeoliveira@hotmail.com",
+      "cpf": "11111111111",
+      "telefone": "33189660",
+      "senha": "11111111111",
+      "confirmarSenha": "11111111111"
     }
   ]
 }

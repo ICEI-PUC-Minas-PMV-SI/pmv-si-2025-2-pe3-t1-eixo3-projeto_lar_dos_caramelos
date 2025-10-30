@@ -92,35 +92,30 @@ const HomePage = () => {
 
       {/* Stats Section */}
       <section className="py-5 bg-light">
-        <div className="container">
-          <div className="row text-center g-4">
-            <div className="col-md-3">
-              <Card className="h-100">
-                <CardContent className="py-4">
-                  <Heart className="text-orange mb-2" size={48} />
-                  <h3 className="display-6">{adoptionCount}</h3>
-                  <p className="text-secondary">Cães Adotados</p>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="col-md-3">
-              <Card className="h-100">
-                <CardContent className="py-4">
-                  <Users className="text-orange mb-2" size={48} />
-                  <h3 className="display-6">89</h3>
-                  <p className="text-secondary">Cães Disponíveis</p>
-                </CardContent>
-              </Card>
-            </div>
-            <div className="col-md-3">
-             
-            </div>
-            <div className="col-md-3">
-              
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="container">
+    <div className="row text-center g-4 justify-content-center">
+      <div className="col-md-3">
+        <Card className="h-100">
+          <CardContent className="py-4">
+            <Heart className="text-orange mb-2" size={48} />
+            <h3 className="display-6">{adoptionCount}</h3>
+            <p className="text-secondary">Cães Adotados</p>
+          </CardContent>
+        </Card>
+      </div>
+      <div className="col-md-3">
+        <Card className="h-100">
+          <CardContent className="py-4">
+            <Users className="text-orange mb-2" size={48} />
+            <h3 className="display-6">89</h3>
+            <p className="text-secondary">Cães Disponíveis</p>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Como Funciona Section */}
       <section className="py-5">
