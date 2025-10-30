@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import FooterComponent from "../components/FooterComponent";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import dog1 from "../assets/dog-1.jpg";
-import dog2 from "../assets/dog-2.jpg";
-import dog3 from "../assets/dog-3.jpg";
+import dog1 from "../assets/Cao adotar 1.png";
+import dog2 from "../assets/Cao adotar 2.png";
+import dog3 from "../assets/Cao adotar 3.png";
 
 const Caes = () => {
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
@@ -161,7 +161,7 @@ const Caes = () => {
       {/* Lista de cães */}
       <section className="py-5 flex-grow-1">
         <div className="container">
-          <h2 className="mb-4 fw-bold">Cães disponíveis para adoção</h2>
+          <h2 className="mb-4 fw-bold text-center">Cães disponíveis para Adoção</h2>
           <div className="row">
             {caes.map((cao) => (
               <div key={cao.id} className="col-md-4 mb-4">
@@ -170,7 +170,7 @@ const Caes = () => {
                     src={cao.foto}
                     alt={cao.nome}
                     className="card-img-top"
-                    style={{ height: "250px", objectFit: "cover" }}
+                    style={{ height: "700px", objectFit: "cover" }}
                   />
                   <div className="card-body">
                     <h5 className="card-title">{cao.nome}</h5>

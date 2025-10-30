@@ -5,13 +5,13 @@ import Footer from "../components/FooterComponent";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import hero from "../assets/hero-dogs.jpg";
-import dog1 from "../assets/dog-1.jpg";
-import dog2 from "../assets/dog-2.jpg";
-import dog3 from "../assets/dog-3.jpg";
+import hero from "../assets/dogs.png";
+import dog1 from "../assets/feira adocao 1.png";
+import dog2 from "../assets/feira adocao 2.png";
+import dog3 from "../assets/feira adocao 3.png";
 import { redirect } from "react-router-dom";
 
-// import heroImage from "../assets/hero.jpg"; // se quiser imagem no topo
+
 
 const eventos = [
   {
@@ -62,7 +62,7 @@ const Eventos = () => {
       <section
         className="text-white text-center py-5"
         style={{
-          background:"#fff3cd",
+          background:"#fff",
         }}
       >
         <div className="container text-dark">
@@ -75,7 +75,7 @@ const Eventos = () => {
   src={hero}
   alt="Hero"
   className="img-fluid rounded mt-4"
-  style={{ maxHeight: "650px", objectFit: "cover", width: "100%" }}
+  style={{ maxHeight: "600px", objectFit: "cover", width: "100%" }}
 />
 
         </div>
@@ -89,7 +89,7 @@ const Eventos = () => {
             {upcomingEvents.map((event) => (
               <div key={event.id} className="col-md-6 col-lg-4">
                 <div className="card h-100 shadow-sm border-0">
-                  <div className="overflow-hidden" style={{ height: "300px" }}>
+                  <div className="overflow-hidden" style={{ height: "400px" }}>
                     <img
                       src={event.image}
                       alt={event.title}

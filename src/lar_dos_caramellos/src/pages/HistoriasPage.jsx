@@ -4,9 +4,9 @@ import Footer from "../components/FooterComponent";
 import { Heart, Quote } from "lucide-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import dog1 from "../assets/dog-1.jpg";
-import dog2 from "../assets/dog-2.jpg";
-import dog3 from "../assets/dog-3.jpg";
+import dog1 from "../assets/dog e tutor 1.png";
+import dog2 from "../assets/dog e tutora 2.png";
+import dog3 from "../assets/dog e tutora 3.png";
 
 
 const Historias = () => {
@@ -45,14 +45,11 @@ const Historias = () => {
 
   return (
     <div className="d-flex flex-column min-vh-100 bg-light">
-      
-      {/* <Navbar /> */}
-
       <main className="flex-grow-1">
-        {/* Hero Section */}
-        <section className="bg-gradient py-5 text-center" style={{ background:"#fff3cd" }} >
+        {/* Seção Hero */}
+        <section className="py-5 text-center" style={{ background: "#fff3cd" }}>
           <div className="container">
-            <Heart size={64} color="#f58f01ff" fill="#f58f01ff" className="mb-3" />
+            <Heart size={64} color="#ff7b00" fill="#ff7b00" className="mb-3" />
             <h1 className="fw-bold display-5 mb-3">Histórias de Adoção</h1>
             <p className="text-muted fs-5">
               Histórias reais de amor, transformação e felicidade. Inspire-se e
@@ -61,32 +58,34 @@ const Historias = () => {
           </div>
         </section>
 
-        {/* Statistics Section  "#fff3cd" */}
-        <section className="py-5 "style={{ background:"#fff3cd" }} >  
-
+        {/* Estatísticas */}
+        <section className="py-5" style={{ background: "#fff3cd" }}>
           <div className="container text-center">
             <div className="row g-4">
               <div className="col-md-4">
-                <h2 className="fw-bold text-color=black">150+</h2>
+                <h2 className="fw-bold text-dark">150+</h2>
                 <p className="text-muted">Cães Adotados</p>
               </div>
               <div className="col-md-4">
-                <h2 className="fw-bold text-color=black">200+</h2>
+                <h2 className="fw-bold text-dark">200+</h2>
                 <p className="text-muted">Famílias Felizes</p>
               </div>
               <div className="col-md-4">
-                <h2 className="fw-bold text-color=black">5 Anos</h2>
+                <h2 className="fw-bold text-dark">5 Anos</h2>
                 <p className="text-muted">Transformando Vidas</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Adoption Stories Section */}
+        {/* Histórias de Adoção */}
         <section className="py-5">
           <div className="container">
             <h2 className="fw-bold text-center mb-3">Histórias que Inspiram</h2>
-            <p className="text-center text-muted mb-5 mx-auto" style={{ maxWidth: "600px" }}>
+            <p
+              className="text-center text-muted mb-5 mx-auto"
+              style={{ maxWidth: "950px" }}
+            >
               Cada adoção é uma história única de amor, superação e
               companheirismo.
             </p>
@@ -95,12 +94,17 @@ const Historias = () => {
               {adoptionStories.map((story, index) => (
                 <div key={index} className="col-md-6 col-lg-4">
                   <div className="card h-100 shadow-sm border-0">
-                    <div className="ratio ratio-1x1 overflow-hidden">
+                    <div className="overflow-hidden">
                       <img
                         src={story.petImage}
                         alt={`${story.petName} com ${story.ownerName}`}
-                        className="card-img-top object-fit-cover"
-                        style={{ transition: "transform 0.3s" }}
+                        className="card-img-top"
+                        style={{
+                          height: "600px",
+                          width: "100%",
+                          objectFit: "cover",
+                          transition: "transform 0.3s ease",
+                        }}
                         onMouseOver={(e) =>
                           (e.currentTarget.style.transform = "scale(1.05)")
                         }
@@ -109,16 +113,18 @@ const Historias = () => {
                         }
                       />
                     </div>
+
                     <div className="card-body">
                       <h5 className="card-title fs-4">{story.petName}</h5>
-                      <h6 className="text-primary fw-semibold small mb-3">
+                      <h6 className="text-warning fw-semibold small mb-3">
                         Adotado por {story.ownerName} • {story.date}
                       </h6>
                       <p className="text-muted">{story.story}</p>
+
                       <div className="bg-body-tertiary p-3 rounded position-relative">
                         <Quote
                           size={20}
-                          className="text-primary position-absolute top-0 start-0 m-2 opacity-50"
+                          className="text-warning position-absolute top-0 start-0 m-2 opacity-50"
                         />
                         <p className="fst-italic small ps-4 mb-0">
                           {story.testimonial}
@@ -132,22 +138,31 @@ const Historias = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-5 text-center" style={{ background:"#fff3cd" }} >
+        {/* Chamada para ação */}
+        <section className="py-5 text-center" style={{ background: "#fff3cd" }}>
           <div className="container">
             <h2 className="fw-bold mb-3">Escreva Sua Própria História</h2>
-            <p className="text-muted fs-5 mb-4 mx-auto" style={{ maxWidth: "700px" }}>
+            <p
+              className="text-muted fs-5 mb-4 mx-auto"
+              style={{ maxWidth: "900px" }}
+            >
               Cada adoção é uma história de amor esperando para ser escrita.
               Venha conhecer nossos cães disponíveis e encontre seu novo melhor
               amigo.
             </p>
 
             <div className="d-flex justify-content-center gap-3 flex-wrap">
-              <a href="/caes" className="btn text-white px-4 py-2 fw-semibold" style={{ backgroundColor:"orange"}}> 
-
+              <a
+                href="/caes"
+                className="btn text-white px-4 py-2 fw-semibold"
+                style={{ backgroundColor: "#ff7b00" }}
+              >
                 Conhecer Cães Disponíveis
               </a>
-              <a href="/dicas" className="btn btn-outline-secondary px-4 py-2 fw-semibold">
+              <a
+                href="/dicas"
+                className="btn btn-outline-secondary px-4 py-2 fw-semibold"
+              >
                 Dicas de Cuidados
               </a>
             </div>

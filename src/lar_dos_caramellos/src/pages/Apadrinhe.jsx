@@ -4,18 +4,18 @@ import '../App.css';
 import { Heart, DollarSign, Calendar, Gift } from "lucide-react";
 import Footer from "../components/FooterComponent";
 
-import dog1 from "../assets/dog-1.jpg";
-import dog2 from "../assets/dog-2.jpg";
-import dog3 from "../assets/dog-3.jpg";
+import dog1 from "../assets/dog-1.png";
+import dog2 from "../assets/dog-2.png";
+import dog3 from "../assets/dog-3.png";
 
 const Apadrinhe = () => {
-  const sponsorshipPlans = [
+  const planos = [
     {
       id: 1,
-      name: "Plano Básico",
-      price: "R$ 50",
-      period: "/mês",
-      benefits: [
+      nome: "Plano Básico",
+      preco: "R$ 50",
+      periodo: "/mês",
+      beneficios: [
         "Alimentação adequada",
         "Higiene e banhos",
         "Foto mensal do pet",
@@ -24,24 +24,24 @@ const Apadrinhe = () => {
     },
     {
       id: 2,
-      name: "Plano Completo",
-      price: "R$ 100",
-      period: "/mês",
-      benefits: [
+      nome: "Plano Completo",
+      preco: "R$ 100",
+      periodo: "/mês",
+      beneficios: [
         "Todos os benefícios do Plano Básico",
         "Atendimento veterinário",
         "Vacinas e vermífugos",
         "Visitas mensais",
         "Vídeos do pet",
       ],
-      featured: true,
+      destaque: true,
     },
     {
       id: 3,
-      name: "Plano Premium",
-      price: "R$ 200",
-      period: "/mês",
-      benefits: [
+      nome: "Plano Premium",
+      preco: "R$ 200",
+      periodo: "/mês",
+      beneficios: [
         "Todos os benefícios do Plano Completo",
         "Treinamento comportamental",
         "Kit personalizado",
@@ -51,48 +51,45 @@ const Apadrinhe = () => {
     },
   ];
 
-  const sponsoredDogs = [
+  const caes = [
     {
       id: 1,
-      name: "Toby",
-      image: dog1,
-      sponsors: 3,
-      description:
-        "Toby está esperando por mais padrinhos para ter uma vida melhor!",
+      nome: "Toby",
+      imagem: dog1,
+      padrinhos: 3,
+      descricao: "Toby espera por mais padrinhos para uma vida melhor.",
     },
     {
       id: 2,
-      name: "Mel",
-      image: dog2,
-      sponsors: 5,
-      description: "Mel adora receber carinho e está precisando de ajuda.",
+      nome: "Mel",
+      imagem: dog2,
+      padrinhos: 5,
+      descricao: "Mel adora receber carinho e está precisando de ajuda.",
     },
     {
       id: 3,
-      name: "Thor",
-      image: dog3,
-      sponsors: 2,
-      description: "Thor é super brincalhão e precisa do seu apoio!",
+      nome: "Thor",
+      imagem: dog3,
+      padrinhos: 2,
+      descricao: "Thor é super brincalhão e precisa do seu apoio!",
     },
   ];
 
-  const handleSubmit = (e) => {
+  const enviarFormulario = (e) => {
     e.preventDefault();
     alert("Mensagem enviada!");
   };
 
   return (
     <div className="d-flex flex-column min-vh-100 bg-light">
-     
-
       <main className="flex-fill">
-        {/* Hero */}
+        {/* Seção principal */}
         <section className="py-5 text-center bg-warning-subtle">
           <div className="container">
-            <Heart size={64} color="#f58f01ff" fill="#f58f01ff" className="mb-3" />
+            <Heart size={64} color="#ff7b00" fill="#ff7b00" className="mb-3" />
             <h1 className="fw-bold mb-3">Seja um Padrinho</h1>
             <p className="lead text-muted">
-              Não pode adotar mas quer ajudar? Apadrinhe um pet e faça a
+              Não pode adotar, mas quer ajudar? Apadrinhe um pet e faça a
               diferença na vida dele! Seu apoio garante alimentação, cuidados
               veterinários e muito carinho.
             </p>
@@ -106,31 +103,31 @@ const Apadrinhe = () => {
             <div className="row g-4 justify-content-center">
               {[
                 {
-                  icon: <Heart color="#dc3545" />,
-                  title: "1. Escolha um Pet",
-                  text: "Selecione o pet que você quer apadrinhar",
+                  icone: <Heart color="#ff7b00" />,
+                  titulo: "1. Escolha um Pet",
+                  texto: "Selecione o pet que você quer apadrinhar.",
                 },
                 {
-                  icon: <DollarSign color="#dc3545" />,
-                  title: "2. Escolha o Plano",
-                  text: "Defina o valor da sua contribuição mensal",
+                  icone: <DollarSign color="#ff7b00" />,
+                  titulo: "2. Escolha o Plano",
+                  texto: "Defina o valor da sua contribuição mensal.",
                 },
                 {
-                  icon: <Calendar color="#dc3545" />,
-                  title: "3. Acompanhe",
-                  text: "Receba fotos e atualizações mensais",
+                  icone: <Calendar color="#ff7b00" />,
+                  titulo: "3. Acompanhe",
+                  texto: "Receba fotos e atualizações mensais.",
                 },
                 {
-                  icon: <Gift color="#dc3545" />,
-                  title: "4. Visite",
-                  text: "Agende visitas e acompanhe o progresso",
+                  icone: <Gift color="#ff7b00" />,
+                  titulo: "4. Visite",
+                  texto: "Agende visitas e acompanhe o progresso.",
                 },
               ].map((item, i) => (
                 <div key={i} className="col-6 col-md-3">
                   <div className="p-4 border rounded bg-white h-100 shadow-sm">
-                    <div className="mb-3">{item.icon}</div>
-                    <h5 className="fw-bold">{item.title}</h5>
-                    <p className="text-muted small">{item.text}</p>
+                    <div className="mb-3">{item.icone}</div>
+                    <h5 className="fw-bold">{item.titulo}</h5>
+                    <p className="text-muted small">{item.texto}</p>
                   </div>
                 </div>
               ))}
@@ -141,46 +138,45 @@ const Apadrinhe = () => {
         {/* Planos */}
         <section className="py-5">
           <div className="container text-center">
-            <h2 className="fw-bold mb-4">Planos de Apadrinhamento</h2>
-            <p className="text-muted mb-5">
-              Escolha o plano que melhor se adequa à sua realidade. Qualquer
-              contribuição faz diferença!
+            <h2 className="section-title">Planos de Apadrinhamento</h2>
+            <p className="section-subtitle">
+              Escolha o plano que melhor se encaixa na sua realidade. Qualquer
+              contribuição faz a diferença!
             </p>
             <div className="row g-4 justify-content-center">
-              {sponsorshipPlans.map((plan) => (
-                <div key={plan.id} className="col-md-4">
+              {planos.map((plano) => (
+                <div key={plano.id} className="col-md-4">
                   <div
-                    className={`card h-100 border-2 position-relative ${
-                      plan.featured ? "border-danger shadow" : ""
+                    className={`card plan-card border-2 position-relative ${
+                      plano.destaque ? "shadow" : ""
                     }`}
                   >
-                    {plan.featured && (
-                      <span className="badge bg-danger position-absolute top-0 start-50 translate-middle mt-3">
+                    {plano.destaque && (
+                      <span className="badge badge-popular position-absolute top-0 start-50 translate-middle mt-3">
                         Mais Popular
                       </span>
                     )}
                     <div className="card-body">
-                      <h5 className="card-title fw-bold">{plan.name}</h5>
-                      <h3 className="text-danger fw-bold">
-                        {plan.price}
-                        <small className="text-muted fs-6"> {plan.period}</small>
+                      <h5 className="card-title fw-bold">{plano.nome}</h5>
+                      <h3 className="fw-bold" style={{ color: "#ff7b00" }}>
+                        {plano.preco}
+                        <small className="text-muted fs-6"> {plano.periodo}</small>
                       </h3>
                       <ul className="list-unstyled mt-3 mb-4">
-                        {plan.benefits.map((benefit, idx) => (
+                        {plano.beneficios.map((beneficio, idx) => (
                           <li key={idx} className="text-start">
-                            <Heart
-                              size={16}
-                              color="#dc3545"
-                              className="me-2"
-                            />
-                            {benefit}
+                            <Heart size={16} color="#ff7b00" className="me-2" />
+                            {beneficio}
                           </li>
                         ))}
                       </ul>
                       <button
-                        className={`btn ${
-                          plan.featured ? "btn-danger" : "btn-outline-danger"
-                        } w-100`}
+                        className="btn w-100"
+                        style={{
+                          backgroundColor: "#ff7b00",
+                          color: "#fff",
+                          border: "none",
+                        }}
                       >
                         Escolher Plano
                       </button>
@@ -195,39 +191,34 @@ const Apadrinhe = () => {
         {/* Pets */}
         <section className="py-5 bg-light border-top border-bottom">
           <div className="container text-center">
-            <h2 className="fw-bold mb-4">Pets Aguardando Padrinhos</h2>
-            <p className="text-muted mb-5">
+            <h2 className="section-title">Pets Aguardando Padrinhos</h2>
+            <p className="section-subtitle">
               Conheça alguns pets que precisam do seu apoio
             </p>
             <div className="row g-4 justify-content-center">
-              {sponsoredDogs.map((dog) => (
-                <div key={dog.id} className="col-md-4">
-                  <div className="card h-100 shadow-sm">
-                    <img
-                      src={dog.image}
-                      alt={dog.name}
-                      className="card-img-top"
-                      style={{
-                        height: "250px",
-                        objectFit: "cover",
-                      }}
-                    />
+              {caes.map((cao) => (
+                <div key={cao.id} className="col-md-4">
+                  <div className="card pet-card shadow-sm">
+                    <img src={cao.imagem} alt={cao.nome} className="card-img-top" />
                     <div className="card-body">
-                      <h5 className="card-title fw-bold">{dog.name}</h5>
-                      <p className="text-muted small">{dog.description}</p>
+                      <h5 className="card-title fw-bold">{cao.nome}</h5>
+                      <p className="text-muted small">{cao.descricao}</p>
                       <div className="d-flex align-items-center justify-content-center mb-3">
-                        <Heart
-                          size={16}
-                          color="#dc3545"
-                          className="me-1"
-                        />
+                        <Heart size={16} color="#ff7b00" className="me-1" />
                         <span className="text-muted small">
-                          {dog.sponsors}{" "}
-                          {dog.sponsors === 1 ? "padrinho" : "padrinhos"}
+                          {cao.padrinhos}{" "}
+                          {cao.padrinhos === 1 ? "padrinho" : "padrinhos"}
                         </span>
                       </div>
-                      <button className="btn btn-danger w-100">
-                        Apadrinhar {dog.name}
+                      <button
+                        className="btn w-100"
+                        style={{
+                          backgroundColor: "#ff7b00",
+                          color: "#fff",
+                          border: "none",
+                        }}
+                      >
+                        Apadrinhar {cao.nome}
                       </button>
                     </div>
                   </div>
@@ -247,15 +238,15 @@ const Apadrinhe = () => {
               </p>
               <div className="card shadow-sm">
                 <div className="card-body">
-                  <form onSubmit={handleSubmit}>
+                  <form onSubmit={enviarFormulario}>
                     <div className="mb-3">
-                      <label htmlFor="name" className="form-label">
+                      <label htmlFor="nome" className="form-label">
                         Nome Completo
                       </label>
                       <input
                         type="text"
                         className="form-control"
-                        id="name"
+                        id="nome"
                         placeholder="Seu nome"
                       />
                     </div>
@@ -271,28 +262,36 @@ const Apadrinhe = () => {
                       />
                     </div>
                     <div className="mb-3">
-                      <label htmlFor="phone" className="form-label">
+                      <label htmlFor="telefone" className="form-label">
                         Telefone
                       </label>
                       <input
                         type="tel"
                         className="form-control"
-                        id="phone"
+                        id="telefone"
                         placeholder="(00) 00000-0000"
                       />
                     </div>
                     <div className="mb-3">
-                      <label htmlFor="message" className="form-label">
+                      <label htmlFor="mensagem" className="form-label">
                         Mensagem
                       </label>
                       <textarea
                         className="form-control"
-                        id="message"
+                        id="mensagem"
                         rows="5"
                         placeholder="Conte-nos como você quer ajudar..."
                       ></textarea>
                     </div>
-                    <button type="submit" className="btn btn-danger w-100">
+                    <button
+                      type="submit"
+                      className="btn w-100"
+                      style={{
+                        backgroundColor: "#ff7b00",
+                        color: "#fff",
+                        border: "none",
+                      }}
+                    >
                       Enviar Mensagem
                     </button>
                   </form>

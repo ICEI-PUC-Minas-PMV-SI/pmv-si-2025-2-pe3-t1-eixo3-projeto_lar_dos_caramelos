@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Heart, Menu, X } from "lucide-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Components.css";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo1.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
