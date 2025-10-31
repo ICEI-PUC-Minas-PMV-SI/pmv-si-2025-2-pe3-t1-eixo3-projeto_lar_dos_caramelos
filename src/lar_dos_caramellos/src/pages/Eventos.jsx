@@ -4,7 +4,6 @@ import Footer from "../components/FooterComponent";
 // import Navbar from "../components/NavbarComponent"; // descomente se tiver
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import hero from "../assets/dogs.png";
 import dog1 from "../assets/feira adocao 1.png";
 import dog2 from "../assets/feira adocao 2.png";

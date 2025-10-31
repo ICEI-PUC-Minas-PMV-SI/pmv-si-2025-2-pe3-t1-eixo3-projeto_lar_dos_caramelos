@@ -71,7 +71,7 @@ const Historias = () => {
 
   return (
     <div className="d-flex flex-column min-vh-100 bg-light">
-      <Navbar />
+    
       <main className="flex-grow-1">
         <section className="py-5 text-center" style={{ background: "#fff3cd" }}>
           <div className="container">

@@ -11,8 +11,6 @@ import EventosPage from './pages/Eventos';
 import DicasPetsPage from './pages/DicasPetsPage';
 import Historias from './pages/HistoriasPage';
 import Caes from './pages/Caes';
-
-
 import Apadrinhe from './pages/Apadrinhe';
 
 function App() {
