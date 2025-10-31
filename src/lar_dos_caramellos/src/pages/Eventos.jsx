@@ -1,7 +1,6 @@
 import React from "react";
 import { Calendar, Clock, MapPin } from "lucide-react";
 import Footer from "../components/FooterComponent";
-// import Navbar from "../components/NavbarComponent"; // descomente se tiver
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import hero from "../assets/dogs.png";
