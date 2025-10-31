@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/NavbarComponent";
 import Footer from "../components/FooterComponent";
 import { Heart, Quote } from "lucide-react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Modal, Button } from "react-bootstrap";
 
 import dog1 from "../assets/dog e tutor 1.png";
 import dog2 from "../assets/dog e tutora 2.png";
 import dog3 from "../assets/dog e tutora 3.png";
 
-
 const Historias = () => {
+  const [likes, setLikes] = useState([0, 0, 0]); // contador simbólico de likes
+  const [modalShow, setModalShow] = useState(false);
+  const [selectedStory, setSelectedStory] = useState(null);
+
   const adoptionStories = [
     {
       petImage: dog1,
@@ -19,6 +23,8 @@ const Historias = () => {
         "Adotei o Max há 2 anos e foi a melhor decisão da minha vida. Ele trouxe alegria e companheirismo para nossa família. Todos os dias ele me espera na porta com aquele olhar amoroso.",
       testimonial:
         "Max transformou nossa casa em um lar cheio de amor e alegria. Não consigo imaginar nossa vida sem ele!",
+      fullStory:
+        "Adotar o Max mudou completamente nossa rotina. Ele nos ensinou responsabilidade, paciência e trouxe muita felicidade para cada dia da família. Participamos de atividades juntos e sentimos uma conexão incrível!",
       date: "Janeiro 2023",
     },
     {
@@ -29,6 +35,8 @@ const Historias = () => {
         "Luna estava assustada no abrigo, mas com amor e paciência, ela se tornou a cadela mais afetuosa que conheço. Hoje ela é a melhor amiga dos meus filhos.",
       testimonial:
         "Luna nos ensinou o verdadeiro significado de resiliência e amor incondicional. Ela é parte da família!",
+      fullStory:
+        "Ao adotar a Luna, aprendemos a importância da paciência e do cuidado constante. Cada dia com ela é cheio de alegria, brincadeiras e aprendizado mútuo. Ela trouxe uma energia incrível para nossa casa!",
       date: "Março 2023",
     },
     {
@@ -39,57 +47,45 @@ const Historias = () => {
         "Thor mudou completamente a minha rotina. Agora acordo cedo para passear e sou muito mais ativo e feliz. Ele me tirou do sedentarismo e trouxe propósito para meus dias.",
       testimonial:
         "Adotar o Thor foi a melhor decisão que já tomei. Ele não só mudou minha saúde física, mas também a mental!",
+      fullStory:
+        "Thor trouxe disciplina, alegria e muita energia para os meus dias. Passeios matinais, brincadeiras e cuidados diários se tornaram rotina, fortalecendo nosso vínculo e melhorando minha qualidade de vida de forma impressionante.",
       date: "Maio 2023",
     },
   ];
 
+  const handleLike = (index) => {
+    const newLikes = [...likes];
+    newLikes[index] += 1;
+    setLikes(newLikes);
+  };
+
+  const handleShowModal = (story) => {
+    setSelectedStory(story);
+    setModalShow(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalShow(false);
+    setSelectedStory(null);
+  };
+
   return (
     <div className="d-flex flex-column min-vh-100 bg-light">
+      <Navbar />
       <main className="flex-grow-1">
-        {/* Seção Hero */}
         <section className="py-5 text-center" style={{ background: "#fff3cd" }}>
           <div className="container">
             <Heart size={64} color="#ff7b00" fill="#ff7b00" className="mb-3" />
             <h1 className="fw-bold display-5 mb-3">Histórias de Adoção</h1>
             <p className="text-muted fs-5">
-              Histórias reais de amor, transformação e felicidade. Inspire-se e
-              faça parte dessa mudança!
+              Histórias reais de amor, transformação e felicidade. Inspire-se e faça parte dessa mudança!
             </p>
           </div>
         </section>
 
-        {/* Estatísticas */}
-        <section className="py-5" style={{ background: "#fff3cd" }}>
-          <div className="container text-center">
-            <div className="row g-4">
-              <div className="col-md-4">
-                <h2 className="fw-bold text-dark">150+</h2>
-                <p className="text-muted">Cães Adotados</p>
-              </div>
-              <div className="col-md-4">
-                <h2 className="fw-bold text-dark">200+</h2>
-                <p className="text-muted">Famílias Felizes</p>
-              </div>
-              <div className="col-md-4">
-                <h2 className="fw-bold text-dark">5 Anos</h2>
-                <p className="text-muted">Transformando Vidas</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Histórias de Adoção */}
         <section className="py-5">
           <div className="container">
             <h2 className="fw-bold text-center mb-3">Histórias que Inspiram</h2>
-            <p
-              className="text-center text-muted mb-5 mx-auto"
-              style={{ maxWidth: "950px" }}
-            >
-              Cada adoção é uma história única de amor, superação e
-              companheirismo.
-            </p>
-
             <div className="row g-4">
               {adoptionStories.map((story, index) => (
                 <div key={index} className="col-md-6 col-lg-4">
@@ -100,20 +96,15 @@ const Historias = () => {
                         alt={`${story.petName} com ${story.ownerName}`}
                         className="card-img-top"
                         style={{
-                          height: "600px",
+                          height: "400px",
                           width: "100%",
                           objectFit: "cover",
                           transition: "transform 0.3s ease",
                         }}
-                        onMouseOver={(e) =>
-                          (e.currentTarget.style.transform = "scale(1.05)")
-                        }
-                        onMouseOut={(e) =>
-                          (e.currentTarget.style.transform = "scale(1)")
-                        }
+                        onMouseOver={(e) => (e.currentTarget.style.transform = "scale(1.05)")}
+                        onMouseOut={(e) => (e.currentTarget.style.transform = "scale(1)")}
                       />
                     </div>
-
                     <div className="card-body">
                       <h5 className="card-title fs-4">{story.petName}</h5>
                       <h6 className="text-warning fw-semibold small mb-3">
@@ -121,14 +112,21 @@ const Historias = () => {
                       </h6>
                       <p className="text-muted">{story.story}</p>
 
-                      <div className="bg-body-tertiary p-3 rounded position-relative">
+                      <div className="bg-body-tertiary p-3 rounded position-relative mb-2">
                         <Quote
                           size={20}
                           className="text-warning position-absolute top-0 start-0 m-2 opacity-50"
                         />
-                        <p className="fst-italic small ps-4 mb-0">
-                          {story.testimonial}
-                        </p>
+                        <p className="fst-italic small ps-4 mb-0">{story.testimonial}</p>
+                      </div>
+
+                      <div className="d-flex justify-content-between align-items-center mt-3">
+                        <Button variant="outline-primary" size="sm" onClick={() => handleShowModal(story)}>
+                          Ver mais
+                        </Button>
+                        <Button variant="outline-danger" size="sm" onClick={() => handleLike(index)}>
+                          ❤️ {likes[index]}
+                        </Button>
                       </div>
                     </div>
                   </div>
@@ -138,38 +136,21 @@ const Historias = () => {
           </div>
         </section>
 
-        {/* Chamada para ação */}
-        <section className="py-5 text-center" style={{ background: "#fff3cd" }}>
-          <div className="container">
-            <h2 className="fw-bold mb-3">Escreva Sua Própria História</h2>
-            <p
-              className="text-muted fs-5 mb-4 mx-auto"
-              style={{ maxWidth: "900px" }}
-            >
-              Cada adoção é uma história de amor esperando para ser escrita.
-              Venha conhecer nossos cães disponíveis e encontre seu novo melhor
-              amigo.
-            </p>
-
-            <div className="d-flex justify-content-center gap-3 flex-wrap">
-              <a
-                href="/caes"
-                className="btn text-white px-4 py-2 fw-semibold"
-                style={{ backgroundColor: "#ff7b00" }}
-              >
-                Conhecer Cães Disponíveis
-              </a>
-              <a
-                href="/dicas"
-                className="btn btn-outline-secondary px-4 py-2 fw-semibold"
-              >
-                Dicas de Cuidados
-              </a>
-            </div>
-          </div>
-        </section>
+        {/* Modal para relato completo */}
+        <Modal show={modalShow} onHide={handleCloseModal} centered>
+          <Modal.Header closeButton>
+            <Modal.Title>{selectedStory?.petName} • {selectedStory?.ownerName}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <p>{selectedStory?.fullStory}</p>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleCloseModal}>
+              Fechar
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </main>
-
       <Footer />
     </div>
   );
