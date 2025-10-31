@@ -51,7 +51,7 @@ const Register = () => {
     if (!validateForm()) return;
 
     try {
-      const response = await fetch("http://localhost:3001/users", {
+      const response = await fetch("http://localhost:3000/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -170,7 +170,7 @@ const Register = () => {
                   type="password"
                   className="form-control"
                   id="senha"
-                  placeholder="••••••••"
+                  placeholder="Senha"
                   value={form.senha}
                   onChange={handleChange}
                 />
@@ -184,7 +184,7 @@ const Register = () => {
                   type="password"
                   className="form-control"
                   id="confirmarSenha"
-                  placeholder="••••••••"
+                  placeholder="Senha"
                   value={form.confirmarSenha}
                   onChange={handleChange}
                 />

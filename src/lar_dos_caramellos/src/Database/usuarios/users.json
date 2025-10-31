@@ -32,6 +32,15 @@
       "telefone": "33189660",
       "senha": "11111111111",
       "confirmarSenha": "11111111111"
+    },
+    {
+      "id": "5ce1",
+      "nome": "hugo santos",
+      "email": "hugo@gmail.com",
+      "cpf": "16645009799",
+      "telefone": "21982254892",
+      "senha": "31810728",
+      "confirmarSenha": "31810728"
     }
   ]
 }

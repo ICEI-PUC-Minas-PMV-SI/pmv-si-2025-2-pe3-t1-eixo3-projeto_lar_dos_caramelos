@@ -17,7 +17,7 @@ const Login = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:3001/users?email=${email}`);
+      const response = await fetch(`http://localhost:3000/users`);
       const data = await response.json();
 
       if (data.length === 0) {
@@ -25,15 +25,20 @@ const Login = () => {
         return;
       }
 
-      const user = data[0];
-      if (user.password === password) {
+      const user = data.find( 
+        (u) => u.email === email && u.senha === password //valor como 'password vindo do form porem esta senha no DB'
+      );
+      
+      if (user) {
         setError("");
-        alert(`Bem-vindo(a), ${user.name}!`);
+        alert(`Bem-vindo(a), ${user.nome}!`);
+
         navigate("/home"); // redireciona pra página principal (ajuste se precisar)
       } else {
         setError("Senha incorreta.");
       }
-    } catch (err) {
+    } 
+    catch (err) {
       console.error("Erro ao conectar com o servidor:", err);
       setError("Erro ao conectar com o servidor. Verifique se o JSON Server está rodando.");
     }
@@ -83,7 +88,7 @@ const Login = () => {
                 type="password"
                 className="form-control"
                 id="password"
-                placeholder="••••••••"
+                placeholder="senha"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
