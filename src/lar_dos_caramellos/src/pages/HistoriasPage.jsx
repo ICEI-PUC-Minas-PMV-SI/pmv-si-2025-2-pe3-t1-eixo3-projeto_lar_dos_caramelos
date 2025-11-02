@@ -96,7 +96,7 @@ const Historias = () => {
                         alt={`${story.petName} com ${story.ownerName}`}
                         className="card-img-top"
                         style={{
-                          height: "400px",
+                          height: "600px",
                           width: "100%",
                           objectFit: "cover",
                           transition: "transform 0.3s ease",
