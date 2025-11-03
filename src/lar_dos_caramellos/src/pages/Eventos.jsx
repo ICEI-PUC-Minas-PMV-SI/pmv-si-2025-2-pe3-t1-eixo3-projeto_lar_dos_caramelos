@@ -87,7 +87,7 @@ const Eventos = () => {
             {upcomingEvents.map((event) => (
               <div key={event.id} className="col-md-6 col-lg-4">
                 <div className="card h-100 shadow-sm border-0">
-                  <div className="overflow-hidden" style={{ height: "400px" }}>
+                  <div className="overflow-hidden" style={{ height: "620px" }}>
                     <img
                       src={event.image}
                       alt={event.title}

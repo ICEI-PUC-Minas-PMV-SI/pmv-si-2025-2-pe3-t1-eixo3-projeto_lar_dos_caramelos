@@ -7,6 +7,9 @@ import Footer from "../components/FooterComponent";
 import dog1 from "../assets/dog-1.png";
 import dog2 from "../assets/dog-2.png";
 import dog3 from "../assets/dog-3.png";
+import dog4 from "../assets/dog-4.png";
+import dog5 from "../assets/dog-5.png";
+import dog6 from "../assets/dog-6.png"; 
 
 const Apadrinhe = () => {
   const planos = [
@@ -73,6 +76,28 @@ const Apadrinhe = () => {
       padrinhos: 2,
       descricao: "Thor é super brincalhão e precisa do seu apoio!",
     },
+    {
+  id: 4,
+  nome: "Apolo",
+  imagem: dog4,
+  padrinhos: 1,
+  descricao: "Apolo é forte e dócil — sonha com um padrinho para chamar de amigo!",
+},
+    {
+  id: 5,
+  nome: "Nina",
+  imagem: dog5,
+  padrinhos: 2,
+  descricao: "Nina é esperta e adora correr! Seu carinho pode transformar a vida dela.",
+},
+   {
+  id: 6,
+  nome: "Zeca",
+  imagem: dog6,
+  padrinhos: 0,
+  descricao: "Zeca é um amigão tranquilo que só precisa de uma chance e muito amor.",
+},
+
   ];
 
   const enviarFormulario = (e) => {

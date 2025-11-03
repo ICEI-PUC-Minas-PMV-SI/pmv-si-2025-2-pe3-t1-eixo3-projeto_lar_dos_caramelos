@@ -5,6 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import dog1 from "../assets/Cao adotar 1.png";
 import dog2 from "../assets/Cao adotar 2.png";
 import dog3 from "../assets/Cao adotar 3.png";
+import dog4 from "../assets/Cao adotar 4.png";
+import dog5 from "../assets/Cao adotar 5.png";
+import dog6 from "../assets/Cao adotar 6.png";  
 
 const Caes = () => {
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
@@ -18,9 +21,13 @@ const Caes = () => {
   });
 
   const caesIniciais = [
-    { id: 1, nome: "Mel", idade: "Filhote (6 meses)", porte: "Pequeno", localizacao: "São Paulo, SP", foto: dog1 },
-    { id: 2, nome: "Thor", idade: "Adulto (3 anos)", porte: "Grande", localizacao: "Rio de Janeiro, RJ", foto: dog2 },
+    { id: 1, nome: "Mel", idade: "Filhote (6 meses)", porte: "Pequeno", localizacao: "Contagem, MG", foto: dog1 },
+    { id: 2, nome: "Thor", idade: "Adulto (3 anos)", porte: "Grande", localizacao: "Betim, MG", foto: dog2 },
     { id: 3, nome: "Luna", idade: "Filhote (8 meses)", porte: "Médio", localizacao: "Belo Horizonte, MG", foto: dog3 },
+    { id: 4, nome: "Pipoca", idade: "Adulto (5 anos)", porte: "Médio", localizacao: "Contagem, MG", foto: dog4 },
+    { id: 5, nome: "Negão", idade: "Adulto (8 anos)", porte: "Grande", localizacao: "Belo Horizonte, MG", foto: dog5 },
+    { id: 6, nome: "Flocão", idade: "Adulto (9 anos)", porte: "Grande", localizacao: "Betim, MG", foto: dog6 },
+  
   ];
 
   useEffect(() => {
