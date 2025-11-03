@@ -157,9 +157,18 @@ const Caes = () => {
                 </div>
               </div>
 
-              <button type="submit" className="btn btn-primary mt-3">
-                Salvar cadastro
-              </button>
+<button
+  type="submit"
+  className="btn mt-3"
+  style={{
+    backgroundColor: "#ff7b00",
+    color: "#fff",
+    fontWeight: "bold",
+    border: "none",
+  }}
+>
+  Salvar cadastro
+</button>
             </form>
           </div>
         </section>
@@ -167,36 +176,54 @@ const Caes = () => {
 
       {/* Lista de cães */}
       <section className="py-5 flex-grow-1">
-        <div className="container">
-          <h2 className="mb-4 fw-bold text-center">Cães disponíveis para Adoção</h2>
-          <div className="row">
-            {caes.map((cao) => (
-              <div key={cao.id} className="col-md-4 mb-4">
-                <div className="card shadow-sm">
-                  <img
-                    src={cao.foto}
-                    alt={cao.nome}
-                    className="card-img-top"
-                    style={{ height: "700px", objectFit: "cover" }}
-                  />
-                  <div className="card-body">
-                    <h5 className="card-title">{cao.nome}</h5>
-                    <p className="card-text mb-1">
-                      <strong>Idade:</strong> {cao.idade}
-                    </p>
-                    <p className="card-text mb-1">
-                      <strong>Porte:</strong> {cao.porte}
-                    </p>
-                    <p className="card-text">
-                      <strong>Localização:</strong> {cao.localizacao}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
+  <div className="container">
+    <h2 className="mb-4 fw-bold text-center">Cães disponíveis para Adoção</h2>
+    <div className="row">
+      {caes.map((cao) => (
+        <div key={cao.id} className="col-md-4 mb-4">
+          <div className="card shadow-sm">
+            <img
+              src={cao.foto}
+              alt={cao.nome}
+              className="card-img-top"
+              style={{
+                width: "100%",
+                height: "600px",      // ajuste a altura desejada
+                objectFit: "cover",   // mantém proporção e corta excessos
+                borderTopLeftRadius: "0.25rem",
+                borderTopRightRadius: "0.25rem"
+              }}
+            />
+            <div className="card-body d-flex flex-column">
+              <h5 className="card-title">{cao.nome}</h5>
+              <p className="card-text mb-1">
+                <strong>Idade:</strong> {cao.idade}
+              </p>
+              <p className="card-text mb-1">
+                <strong>Porte:</strong> {cao.porte}
+              </p>
+              <p className="card-text mb-3">
+                <strong>Localização:</strong> {cao.localizacao}
+              </p>
+              <button
+                className="btn mt-auto"
+                style={{
+                  backgroundColor: "#ff7b00",
+                  color: "#fff",
+                  fontWeight: "bold",
+                  border: "none",
+                }}
+                onClick={() => alert(`Você escolheu adotar ${cao.nome}!`)}
+              >
+                Adotar {cao.nome}
+              </button>
+            </div>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       <FooterComponent />
     </div>
