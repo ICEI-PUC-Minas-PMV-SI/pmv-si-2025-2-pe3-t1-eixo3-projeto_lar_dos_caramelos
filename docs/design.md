@@ -12,7 +12,7 @@
 ## 4.2 Mapa de Empatia
 <img width="1393" height="781" alt="image" src="https://github.com/user-attachments/assets/fe719561-f3d9-4257-91c4-2a00c76519b5" />
 <img width="1028" height="571" alt="image" src="https://github.com/user-attachments/assets/4ea596d1-12ba-4209-b9f2-55b4f4900282" />
-<img width="1152" height="696" alt="image" src="https://github.com/user-attachments/assets/4565872e-7366-42e3-9eb9-6bb0b9d0ffea" />
+<img width="1048" height="591" alt="image" src="https://github.com/user-attachments/assets/5f24623c-8cb4-4bb2-997c-9da56cf346bb" />
 <img width="1872" height="1055" alt="image" src="https://github.com/user-attachments/assets/8af302e4-3412-4974-a84e-9bde84b83a00" />
 
 
