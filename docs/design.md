@@ -23,8 +23,6 @@ Apresente nesta seção os protótipos de alta fidelidade do sistema proposto. A
 
 ## 4.4 Testes com Protótipos
 
-# Relatório de Avaliação de Usabilidade do Protótipo “Adoção de Cães”
-
 A avaliação de usabilidade do protótipo **“Adoção de Cães”** foi realizada com quatro participantes, com o objetivo de compreender a percepção dos usuários em relação à clareza, navegabilidade, organização visual e facilidade de uso da interface. As respostas coletadas indicam uma aceitação extremamente positiva do sistema, revelando que o protótipo cumpre bem seu propósito principal de promover a adoção de cães de maneira simples, intuitiva e acessível.
 
 De forma geral, todos os avaliadores afirmaram ter compreendido imediatamente o objetivo do site ao acessar a página inicial. A proposta de incentivar e facilitar o processo de adoção foi percebida de maneira clara e direta, demonstrando que o design inicial comunica de forma eficiente a missão e o público-alvo da aplicação. A estrutura do menu e a disposição dos botões também receberam avaliações unânimes positivas, sendo descritos como intuitivos, bem organizados e de fácil navegação.
