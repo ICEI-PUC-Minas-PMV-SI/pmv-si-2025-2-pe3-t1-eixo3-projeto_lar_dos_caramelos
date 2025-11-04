@@ -12,6 +12,9 @@ import dog6 from "../assets/Cao adotar 6.png";
 const Caes = () => {
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
   const [caes, setCaes] = useState([]);
+  const [mostrarModal, setMostrarModal] = useState(false);
+  const [doadorSelecionado, setDoadorSelecionado] = useState(null);
+
   const [novoCao, setNovoCao] = useState({
     nome: "",
     idade: "",
@@ -20,15 +23,96 @@ const Caes = () => {
     foto: "",
     doadorNome: "",
     doadorTelefone: "",
+    doadorEmail: "",
+    doadorFoto: "",
   });
 
+  // 🐶 Dados iniciais (6 cães)
   const caesIniciais = [
-    { id: 1, nome: "Mel", idade: "Filhote (6 meses)", porte: "Pequeno", localizacao: "Contagem, MG", foto: dog1, doador: { nome: "João", telefone: "(31) 91234-5678" } },
-    { id: 2, nome: "Thor", idade: "Adulto (3 anos)", porte: "Grande", localizacao: "Betim, MG", foto: dog2, doador: { nome: "Maria", telefone: "(31) 98765-4321" } },
-    { id: 3, nome: "Luna", idade: "Filhote (8 meses)", porte: "Médio", localizacao: "Belo Horizonte, MG", foto: dog3, doador: { nome: "Carlos", telefone: "(31) 99876-5432" } },
-    { id: 4, nome: "Pipoca", idade: "Adulto (5 anos)", porte: "Médio", localizacao: "Contagem, MG", foto: dog4, doador: { nome: "Ana", telefone: "(31) 91111-2222" } },
-    { id: 5, nome: "Negão", idade: "Adulto (8 anos)", porte: "Grande", localizacao: "Belo Horizonte, MG", foto: dog5, doador: { nome: "Paulo", telefone: "(31) 93333-4444" } },
-    { id: 6, nome: "Flocão", idade: "Adulto (9 anos)", porte: "Grande", localizacao: "Betim, MG", foto: dog6, doador: { nome: "Beatriz", telefone: "(31) 95555-6666" } },
+    {
+      id: 1,
+      nome: "Mel",
+      idade: "Filhote (6 meses)",
+      porte: "Pequeno",
+      localizacao: "Contagem, MG",
+      foto: dog1,
+      doador: {
+        nome: "João",
+        telefone: "(31) 91234-5678",
+        email: "joao@email.com",
+        foto: "https://randomuser.me/api/portraits/men/1.jpg",
+      },
+    },
+    {
+      id: 2,
+      nome: "Thor",
+      idade: "Adulto (3 anos)",
+      porte: "Grande",
+      localizacao: "Betim, MG",
+      foto: dog2,
+      doador: {
+        nome: "Maria",
+        telefone: "(31) 98765-4321",
+        email: "maria@email.com",
+        foto: "https://randomuser.me/api/portraits/women/2.jpg",
+      },
+    },
+    {
+      id: 3,
+      nome: "Luna",
+      idade: "Filhote (8 meses)",
+      porte: "Médio",
+      localizacao: "Belo Horizonte, MG",
+      foto: dog3,
+      doador: {
+        nome: "Carlos",
+        telefone: "(31) 99876-5432",
+        email: "carlos@email.com",
+        foto: "https://randomuser.me/api/portraits/men/3.jpg",
+      },
+    },
+    {
+      id: 4,
+      nome: "Pipoca",
+      idade: "Adulto (5 anos)",
+      porte: "Médio",
+      localizacao: "Contagem, MG",
+      foto: dog4,
+      doador: {
+        nome: "Ana",
+        telefone: "(31) 91111-2222",
+        email: "ana@email.com",
+        foto: "https://randomuser.me/api/portraits/women/4.jpg",
+      },
+    },
+    {
+      id: 5,
+      nome: "Negão",
+      idade: "Adulto (8 anos)",
+      porte: "Grande",
+      localizacao: "Belo Horizonte, MG",
+      foto: dog5,
+      doador: {
+        nome: "Paulo",
+        telefone: "(31) 93333-4444",
+        email: "paulo@email.com",
+        foto: "https://randomuser.me/api/portraits/men/5.jpg",
+      },
+    },
+    {
+      id: 6,
+      nome: "Flocão",
+      idade: "Adulto (9 anos)",
+      porte: "Grande",
+      localizacao: "Betim, MG",
+      foto: dog6,
+      doador: {
+        nome: "Beatriz",
+        telefone: "(31) 95555-6666",
+        email: "beatriz@email.com",
+        foto: "https://randomuser.me/api/portraits/women/6.jpg",
+      },
+    },
   ];
 
   useEffect(() => {
@@ -38,10 +122,10 @@ const Caes = () => {
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
-    if (name === "foto" && files.length > 0) {
+    if ((name === "foto" || name === "doadorFoto") && files.length > 0) {
       const fileReader = new FileReader();
       fileReader.onload = () => {
-        setNovoCao((prev) => ({ ...prev, foto: fileReader.result }));
+        setNovoCao((prev) => ({ ...prev, [name]: fileReader.result }));
       };
       fileReader.readAsDataURL(files[0]);
     } else {
@@ -54,19 +138,38 @@ const Caes = () => {
     const novo = {
       ...novoCao,
       id: Date.now(),
-      doador: { nome: novoCao.doadorNome, telefone: novoCao.doadorTelefone },
+      doador: {
+        nome: novoCao.doadorNome,
+        telefone: novoCao.doadorTelefone,
+        email: novoCao.doadorEmail,
+        foto: novoCao.doadorFoto,
+      },
     };
     const atualizado = [...caes, novo];
     setCaes(atualizado);
     localStorage.setItem("caes", JSON.stringify(atualizado));
-    setNovoCao({ nome: "", idade: "", porte: "", localizacao: "", foto: "", doadorNome: "", doadorTelefone: "" });
+    setNovoCao({
+      nome: "",
+      idade: "",
+      porte: "",
+      localizacao: "",
+      foto: "",
+      doadorNome: "",
+      doadorTelefone: "",
+      doadorEmail: "",
+      doadorFoto: "",
+    });
     setMostrarFormulario(false);
   };
 
   const handleAdotar = (cao) => {
-    alert(
-      `Você escolheu adotar ${cao.nome}!\n\nEntre em contato com o anunciante:\nNome: ${cao.doador.nome}\nTelefone: ${cao.doador.telefone}`
-    );
+    setDoadorSelecionado(cao.doador);
+    setMostrarModal(true);
+  };
+
+  const fecharModal = () => {
+    setMostrarModal(false);
+    setDoadorSelecionado(null);
   };
 
   return (
@@ -95,6 +198,7 @@ const Caes = () => {
             <h2 className="mb-4 fw-bold">Cadastrar novo cão para adoção</h2>
             <form onSubmit={handleSubmit}>
               <div className="row g-3">
+                {/* Campos do formulário */}
                 <div className="col-md-6 col-lg-3">
                   <label className="form-label">Nome</label>
                   <input
@@ -146,8 +250,9 @@ const Caes = () => {
                     required
                   />
                 </div>
+
                 <div className="col-md-6 col-lg-4">
-                  <label className="form-label">Foto</label>
+                  <label className="form-label">Foto do cão</label>
                   <input
                     type="file"
                     name="foto"
@@ -157,6 +262,7 @@ const Caes = () => {
                     required
                   />
                 </div>
+
                 <div className="col-md-6 col-lg-4">
                   <label className="form-label">Nome do Doador</label>
                   <input
@@ -169,8 +275,9 @@ const Caes = () => {
                     required
                   />
                 </div>
+
                 <div className="col-md-6 col-lg-4">
-                  <label className="form-label">Telefone do Doador</label>
+                  <label className="form-label">Telefone</label>
                   <input
                     type="text"
                     name="doadorTelefone"
@@ -181,7 +288,32 @@ const Caes = () => {
                     required
                   />
                 </div>
+
+                <div className="col-md-6 col-lg-6">
+                  <label className="form-label">E-mail</label>
+                  <input
+                    type="email"
+                    name="doadorEmail"
+                    className="form-control"
+                    placeholder="E-mail do anunciante"
+                    value={novoCao.doadorEmail}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <div className="col-md-6 col-lg-6">
+                  <label className="form-label">Foto do Doador</label>
+                  <input
+                    type="file"
+                    name="doadorFoto"
+                    accept="image/*"
+                    className="form-control"
+                    onChange={handleChange}
+                  />
+                </div>
               </div>
+
               <button
                 type="submit"
                 className="btn mt-3"
@@ -210,18 +342,21 @@ const Caes = () => {
                       width: "100%",
                       height: "600px",
                       objectFit: "cover",
-                      borderTopLeftRadius: "0.25rem",
-                      borderTopRightRadius: "0.25rem",
                     }}
                   />
                   <div className="card-body d-flex flex-column">
                     <h5 className="card-title">{cao.nome}</h5>
-                    <p className="card-text mb-1"><strong>Idade:</strong> {cao.idade}</p>
-                    <p className="card-text mb-1"><strong>Porte:</strong> {cao.porte}</p>
-                    <p className="card-text mb-3"><strong>Localização:</strong> {cao.localizacao}</p>
+                    <p><strong>Idade:</strong> {cao.idade}</p>
+                    <p><strong>Porte:</strong> {cao.porte}</p>
+                    <p><strong>Localização:</strong> {cao.localizacao}</p>
                     <button
                       className="btn mt-auto"
-                      style={{ backgroundColor: "#ff7b00", color: "#fff", fontWeight: "bold", border: "none" }}
+                      style={{
+                        backgroundColor: "#ff7b00",
+                        color: "#fff",
+                        fontWeight: "bold",
+                        border: "none",
+                      }}
                       onClick={() => handleAdotar(cao)}
                     >
                       Adotar {cao.nome}
@@ -233,6 +368,48 @@ const Caes = () => {
           </div>
         </div>
       </section>
+
+      {/* Modal do Doador */}
+      {mostrarModal && doadorSelecionado && (
+        <div
+          className="modal show d-block"
+          tabIndex="-1"
+          style={{ backgroundColor: "rgba(0,0,0,0.5)" }}
+        >
+          <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Informações do Doador</h5>
+                <button type="button" className="btn-close" onClick={fecharModal}></button>
+              </div>
+              <div className="modal-body text-center">
+                {doadorSelecionado.foto && (
+                  <img
+                    src={doadorSelecionado.foto}
+                    alt={doadorSelecionado.nome}
+                    className="rounded-circle mb-3"
+                    width="120"
+                    height="120"
+                    style={{ objectFit: "cover" }}
+                  />
+                )}
+                <h5>{doadorSelecionado.nome}</h5>
+                <p><strong>Telefone:</strong> {doadorSelecionado.telefone}</p>
+                <p><strong>Email:</strong> {doadorSelecionado.email}</p>
+              </div>
+              <div className="modal-footer">
+                <button
+                  className="btn"
+                  style={{ backgroundColor: "#ff7b00", color: "#fff" }}
+                  onClick={fecharModal}
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <FooterComponent />
     </div>
