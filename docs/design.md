@@ -19,6 +19,13 @@
 
 
 ## 4.3 Protótipos das Interfaces
+Nesta etapa, apresentamos os protótipos das telas que compõem o site **Lar dos Caramellos**, desenvolvidos com foco na clareza, acessibilidade e experiência do usuário.
+Cada tela foi elaborada com base em princípios de design intuitivo e usabilidade, buscando garantir uma navegação fluida, emocionalmente envolvente e livre de erros.
+
+Os layouts foram construídos de forma harmoniosa e responsiva, assegurando bom desempenho em diferentes dispositivos e facilidade de leitura para todos os tipos de públicos.
+A identidade visual marcada pelas cores acolhedoras e ícones temáticos reflete o propósito do projeto: promover o bem-estar animal e incentivar a adoção responsável.
+
+Assim, cada tela **Home, Cães, Apadrinhe, Dicas Pet, Eventos, Histórias e Entrar(Login)**, foi planejada cuidadosamente para oferecer uma experiência clara, envolvente e funcional, fortalecendo o vínculo entre o usuário e a causa animal que o site representa.
 
 # 🐾 Protótipo Tela HOME 
 <img width="1142" height="861" alt="image" src="https://github.com/user-attachments/assets/4eb27de2-11d9-4cd1-a37c-3d4ddb8ba348" />
@@ -366,7 +373,7 @@ A interface utiliza **imagens afetivas** e **narrativas curtas** para criar **co
 - **Estética e Design Minimalista:** Visual limpo, com imagens afetivas e informações essenciais.  
 - **Suporte à Memória do Usuário:** Organização lógica das histórias facilita a memorização e o retorno à navegação.  
 
-# 🐾 Protótipo Tela LOGIN (Entrar)
+# 🐾 Protótipo Tela ENTRAR(Login)
 <img width="1421" height="854" alt="image" src="https://github.com/user-attachments/assets/c0eed6e1-f36b-446c-8c7c-a32c6a0c7554" />
 
 ## **1. Objetivo da Tela**
