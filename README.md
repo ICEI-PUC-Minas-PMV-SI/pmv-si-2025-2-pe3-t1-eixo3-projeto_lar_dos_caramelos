@@ -1,8 +1,5 @@
-# Lar dos Caramelos
 
-<img width="500" height="500" alt="Logo_do_Lar_dos_Caramelos_500x500" src="https://github.com/user-attachments/assets/19de23fa-5602-4849-a555-3f64077b7681" />
-
-
+<img width="600" height="600" alt="Logo Lar dos Caramellos" src="https://github.com/user-attachments/assets/4463ce72-0a50-4b02-8d2c-2033969e0cb3" />
 
 `CURSO: Sistemas de Informação`
 
@@ -10,7 +7,7 @@
 
 `SEMESTRE: 3º`
 
-O **Lar dos Caramelos** é um projeto voltado para a criação de uma aplicação web dedicada à adoção de animais resgatados. A plataforma tem como objetivo conectar pessoas interessadas em adotar.
+O **Lar dos Caramellos** é um projeto voltado para a criação de uma aplicação web dedicada à adoção de animais resgatados. A plataforma tem como objetivo conectar pessoas interessadas em adotar.
 Além de disponibilizar informações sobre cada animal, como fotos, histórico e cuidados necessários, a aplicação também busca conscientizar sobre a importância da adoção responsável, contribuindo para reduzir o número de cães em situação de abandono. O projeto pretende unir tecnologia e solidariedade para transformar a vida de animais e futuros tutores.
 
 
