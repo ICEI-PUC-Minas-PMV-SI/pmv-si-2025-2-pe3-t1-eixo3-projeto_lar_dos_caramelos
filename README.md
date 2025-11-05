@@ -1,5 +1,5 @@
 
-<img width="600" height="600" alt="Logo Lar dos Caramellos" src="https://github.com/user-attachments/assets/4463ce72-0a50-4b02-8d2c-2033969e0cb3" />
+<img width="400" height="400" alt="Logo Lar dos Caramellos" src="https://github.com/user-attachments/assets/4463ce72-0a50-4b02-8d2c-2033969e0cb3" />
 
 `CURSO: Sistemas de Informação`
 
