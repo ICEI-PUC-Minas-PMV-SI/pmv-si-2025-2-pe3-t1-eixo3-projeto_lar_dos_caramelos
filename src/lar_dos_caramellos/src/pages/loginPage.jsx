@@ -17,7 +17,7 @@ const Login = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:3001/users`);
+      const response = await fetch(`http://localhost:3000/users`);
       const data = await response.json();
 
       if (data.length === 0) {
