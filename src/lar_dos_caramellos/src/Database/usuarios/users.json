@@ -41,6 +41,15 @@
       "telefone": "21982254892",
       "senha": "31810728",
       "confirmarSenha": "31810728"
+    },
+    {
+      "id": "2f8d",
+      "nome": "Raquel",
+      "email": "raquel-ribeiro2311@hotmail.com",
+      "cpf": "12345845558",
+      "telefone": "31999999999",
+      "senha": "123456",
+      "confirmarSenha": "123456"
     }
   ]
 }
