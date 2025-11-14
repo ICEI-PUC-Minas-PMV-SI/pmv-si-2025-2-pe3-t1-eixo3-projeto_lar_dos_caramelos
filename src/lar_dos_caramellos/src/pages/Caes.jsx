@@ -358,7 +358,7 @@ const Caes = () => {
                     style={{ backgroundColor: "#ff7b00", border: "none" }}
                     type="submit"
                   >
-                    Salvar Cão
+                    Salvar
                   </button>
                 </div>
               </div>
