@@ -13,7 +13,7 @@ const Login = () => {
         <div className="text-center mb-4">
           <Link to="/" className="d-inline-flex align-items-center gap-2 text-decoration-none">
             <Heart size={36} color="orange" fill="orange" />
-            <span className="fs-3 fw-bold text-dark">Amigo de Pata</span>
+            <span className="fs-3 fw-bold text-dark">Lar dos Caramellos</span>
           </Link>
         </div>
 
