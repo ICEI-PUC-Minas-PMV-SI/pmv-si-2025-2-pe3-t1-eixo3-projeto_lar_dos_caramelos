@@ -10,17 +10,10 @@ export default async function  LoginService(User){
    //alert("Login realizado com sucesso!");
    console.log("Logou")
 
-
-
     // aqui você pode redirecionar, ex: navigate("/home") no componente
   } else {
     alert("Usuário ou senha inválidos!");
   }
-
-
-    
-
-
 }
    
 

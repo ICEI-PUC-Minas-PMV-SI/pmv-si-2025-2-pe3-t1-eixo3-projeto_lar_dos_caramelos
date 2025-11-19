@@ -59,6 +59,15 @@
       "telefone": "(98) 6410-920",
       "senha": "123456",
       "confirmarSenha": "123456"
+    },
+    {
+      "id": "d2b0",
+      "nome": "joao parafuso",
+      "email": "parafuso@gmail.com",
+      "cpf": "1237654",
+      "telefone": "21982254899",
+      "senha": "123456",
+      "confirmarSenha": "123456"
     }
   ]
 }

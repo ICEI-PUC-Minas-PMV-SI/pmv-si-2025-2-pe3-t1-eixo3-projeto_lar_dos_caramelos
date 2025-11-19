@@ -8,7 +8,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "json-server --watch src/Database/usuarios/users.json --port 5000"
+    "server:users": "json-server --watch src/Database/usuarios/users.json --port 5000",
+    "server:caes": "json-server --watch src/Database/caes/caes.json --port 5002",
+    "server:all": "concurrently \"npm run server:users\" \"npm run server:caes\""
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
@@ -17,7 +19,8 @@
     "react": "^19.1.1",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.1",
-    "react-router-dom": "^7.9.4"
+    "react-router-dom": "^7.9.4",
+    "concurrently": "^7.6.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

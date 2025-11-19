@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useRouteError } from "react-router-dom"
 import RegisterService from "../services/RegisterService"
 
+
 export default function RegisterPage() { 
    
 const [user, setUser] = useState({
