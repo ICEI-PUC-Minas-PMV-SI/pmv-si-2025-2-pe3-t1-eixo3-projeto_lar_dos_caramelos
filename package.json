@@ -1,0 +1,24 @@
+{
+  "name": "pmv-si-2025-2-pe3-t1-eixo3-projeto_lar_dos_caramelos",
+  "version": "1.0.0",
+  "description": "<img width=\"400\" height=\"400\" alt=\"Logo Lar dos Caramellos\" src=\"https://github.com/user-attachments/assets/4463ce72-0a50-4b02-8d2c-2033969e0cb3\" />",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_lar_dos_caramelos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_lar_dos_caramelos/issues"
+  },
+  "homepage": "https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe3-t1-eixo3-projeto_lar_dos_caramelos#readme"
+}
