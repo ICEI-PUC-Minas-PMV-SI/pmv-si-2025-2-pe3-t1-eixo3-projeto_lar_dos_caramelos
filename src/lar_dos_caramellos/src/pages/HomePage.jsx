@@ -4,6 +4,9 @@ import cachorro from "../assets/cachorro.jpg";
 import '../App.css'
 import { Heart, Users, Home as HomeIcon, Award } from "lucide-react";
 import Footer from "../components/FooterComponent";
+import { useState, useEffect } from "react";
+
+
 
 // Placeholder Button e Card para manter estrutura
 const Button = ({ children, className }) => (
@@ -23,6 +26,20 @@ const heroImage = "/hero.jpg";
 const adoptionCount = 123;
 
 const HomePage = () => {
+
+  
+  const [availableCount, setAvailableCount] = useState(0);
+
+    useEffect(() => {
+      fetch("http://localhost:5002/caes")
+        .then((res) => res.json())
+        .then((data) => {
+          
+          setAvailableCount(data.length); // conta todos os registros no DB
+        })
+        .catch((err) => console.error("Erro ao carregar cães:", err));
+    }, []);
+
   return (
     <div className="d-flex flex-column min-vh-100">
       
@@ -107,7 +124,7 @@ const HomePage = () => {
         <Card className="h-100">
           <CardContent className="py-4">
             <Users className="text-orange mb-2" size={48} />
-            <h3 className="display-6">89</h3>
+            <h3 className="display-6">{ availableCount }</h3>
             <p className="text-secondary">Cães Disponíveis</p>
           </CardContent>
         </Card>
