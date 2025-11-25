@@ -84,7 +84,7 @@ function Caes() {
                       src={cao.foto}
                       className="card-img-top"
                       alt={cao.nome}
-                      style={{ height: "250px", objectFit: "cover" }}
+                      style={{ height: "650px", objectFit: "cover" }}
                     />
                     <div className="card-body d-flex flex-column">
                       <h5 className="card-title fw-bold">{cao.nome}</h5>
@@ -95,10 +95,11 @@ function Caes() {
                       </p>
                       <div className="mt-auto">
                         <button
-                          className="btn btn-primary w-100"
-                          onClick={() => handleAdotar(cao)}
+                        className="btn w-100 text-white fw-bold"
+                        style={{ backgroundColor: "#ff7b00", border: "none" }}
+                        onClick={() => handleAdotar(cao)}
                         >
-                          Quero Adotar
+                        Quero Adotar
                         </button>
                       </div>
                     </div>

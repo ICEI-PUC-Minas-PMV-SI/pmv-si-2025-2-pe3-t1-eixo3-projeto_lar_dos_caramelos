@@ -21,13 +21,13 @@ const Apadrinhe = () => {
   const FONTE_SUBTITULO = "22px";
   const FONTE_TEXTO = "18px";
   const FONTE_PEQUENA = "15px";
-  const FONTE_BOTAO = "20px";
+  const FONTE_BOTAO = "18px";
 
   // -----------------------------------------
   // 🔘 CONTROLE GLOBAL DOS BOTÕES
   // -----------------------------------------
-  const ALTURA_BOTAO = "8px 12px"; 
-  const ARREDONDAMENTO = "10px";
+  const ALTURA_BOTAO = "8px 8px"; 
+  const ARREDONDAMENTO = "8px";
 
 
   const [caes, setCaes] = useState([
