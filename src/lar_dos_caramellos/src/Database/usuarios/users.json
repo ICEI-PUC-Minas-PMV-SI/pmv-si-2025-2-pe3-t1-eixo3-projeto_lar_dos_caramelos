@@ -68,6 +68,15 @@
       "telefone": "21982254899",
       "senha": "123456",
       "confirmarSenha": "123456"
+    },
+    {
+      "id": "29e2",
+      "nome": "Raquel",
+      "email": "raquel-ribeiro2311@gmail.com",
+      "cpf": "12345678955",
+      "telefone": "9999999999",
+      "senha": "123456",
+      "confirmarSenha": "123456"
     }
   ]
 }
