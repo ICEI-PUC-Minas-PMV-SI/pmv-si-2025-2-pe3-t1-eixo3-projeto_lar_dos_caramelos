@@ -39,21 +39,32 @@ const Footer = () => {
                   Adotar um Cão
                 </Link>
               </li>
+
               <li className="mb-2">
                 <Link to="/apadrinhar" className="text-secondary text-decoration-none hover-link small">
                   Apadrinhar
                 </Link>
               </li>
+
               <li className="mb-2">
                 <Link to="/eventos" className="text-secondary text-decoration-none hover-link small">
                   Eventos
                 </Link>
               </li>
+
               <li className="mb-2">
                 <Link to="/dicas" className="text-secondary text-decoration-none hover-link small">
                   Dicas Pet
                 </Link>
               </li>
+
+              {/* ✅ Novo link adicionado aqui */}
+              <li className="mb-2">
+                <Link to="/historias" className="text-secondary text-decoration-none hover-link small">
+                  Histórias de Adoção
+                </Link>
+              </li>
+
             </ul>
           </div>
 
@@ -61,16 +72,6 @@ const Footer = () => {
           <div className="col-6 col-md-3">
             <h5 className="fw-semibold text-dark mb-3">Ajuda</h5>
             <ul className="list-unstyled">
-              <li className="mb-2">
-                <Link to="/denuncias" className="text-secondary text-decoration-none hover-link small">
-                  Denunciar Maus Tratos
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link to="/historias" className="text-secondary text-decoration-none hover-link small">
-                  Histórias de Adoção
-                </Link>
-              </li>
               <li className="mb-2">
                 <a href="#" className="text-secondary text-decoration-none hover-link small">
                   Contato
