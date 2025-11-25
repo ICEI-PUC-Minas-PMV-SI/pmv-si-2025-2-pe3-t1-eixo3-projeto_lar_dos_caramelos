@@ -1,38 +1,60 @@
-import { useEffect, useState } from "react"
-import { useRouteError } from "react-router-dom"
-import RegisterService from "../services/RegisterService"
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import RegisterService from "../services/RegisterService";
 
-export default function RegisterPage() { 
-   
-const [user, setUser] = useState({
-    name:'',
-    email:'',
-    password:''
+export default function RegisterPage({ setUsuarioLogado }) {
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
 
-})
+  const [buttonDisabled, setButtonDisabled] = useState(true);
+  const navigate = useNavigate();
 
-const [buttonDisabled, setButtonDisabled] = useState(true);
+  function Register(e) {
+    e.preventDefault();
 
-function Register(e){
-    e.preventDefault()
- // console.log(user)
-RegisterService(user)
-}
+    RegisterService(user)
+      .then((res) => {
+        if (res && res.id) {
+          // Cria objeto de login
+          const loggedUser = {
+            id: res.id,
+            nome: user.name,
+            email: user.email,
+          };
 
+          // Salva no localStorage
+          localStorage.setItem("usuarioLogado", JSON.stringify(loggedUser));
 
+          // Atualiza o estado da Navbar
+          if (setUsuarioLogado) {
+            setUsuarioLogado(loggedUser);
+          }
 
+          alert(`Conta criada com sucesso! Por favor realize o login, ${user.name}`);
+        
+          navigate("/login");
+           window.location.reload(); 
+        }
+      })
+      .catch((err) => {
+        console.error("Erro ao registrar:", err);
+        alert("Erro ao criar conta.");
+      });
+  }
 
+  function handleChange(e) {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  }
 
-function handleChange(e){
-    setUser({...user, [e.target.name]: e.target.value})
-}
-   
   useEffect(() => {
-    // Todos os critérios dentro de um if
     if (
-      user.name && user.name.length >= 3 &&
-      user.email && user.email.includes("@") && user.email.includes(".") &&
-      user.password && user.password.length >= 6
+      user.name.length >= 3 &&
+      user.email.includes("@") &&
+      user.email.includes(".") &&
+      user.password.length >= 6
     ) {
       setButtonDisabled(false);
     } else {
@@ -40,48 +62,45 @@ function handleChange(e){
     }
   }, [user]);
 
+  return (
+    <form onSubmit={Register} className="p-4">
 
+      <div className="mb-3">
+        <label className="form-label">Name</label>
+        <input
+          name="name"
+          onInput={handleChange}
+          value={user.name}
+          type="text"
+          className="form-control"
+        />
+      </div>
 
+      <div className="mb-3">
+        <label className="form-label">E-mail</label>
+        <input
+          name="email"
+          onInput={handleChange}
+          value={user.email}
+          type="email"
+          className="form-control"
+        />
+      </div>
 
+      <div className="mb-3">
+        <label className="form-label">Password</label>
+        <input
+          name="password"
+          onInput={handleChange}
+          value={user.password}
+          type="password"
+          className="form-control"
+        />
+      </div>
 
-    return (
-            <>
-             <form onSubmit={Register}>
-
-                    <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Name</label>
-
-                            <input name = 'name' onInput={handleChange} value={user.name} type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">E-mail</label>
-
-                            <input name ='email' onInput={handleChange}  value={user.email} type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            
-                            <label  for="exampleInputPassword1" class="form-label">Password</label>
-
-                            <input name='password' onInput={handleChange} value={user.password} type="password" class="form-control" id="exampleInputPassword1" />
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-                            <label class="form-check-label" for="exampleCheck1">Check one</label>
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-                            <label class="form-check-label" for="exampleCheck1">Check two</label>
-                        </div>
-                        <button type="submit" class="btn btn-dark" disabled={buttonDisabled} >Submit</button>
-                        </form>
-            </>
-
-    )
-
-
-
+      <button type="submit" className="btn btn-dark" disabled={buttonDisabled}>
+        Submit
+      </button>
+    </form>
+  );
 }

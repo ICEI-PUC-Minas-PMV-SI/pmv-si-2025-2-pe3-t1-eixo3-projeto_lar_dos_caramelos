@@ -9,7 +9,7 @@ const Login = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  // Função para verificar o login no JSON Server
+  // Função para verificar o login
   const handleLogin = async () => {
     if (!email || !password) {
       setError("Por favor, preencha todos os campos.");
@@ -25,20 +25,23 @@ const Login = () => {
         return;
       }
 
-      const user = data.find( 
-        (u) => u.email === email && u.senha === password //valor como 'password vindo do form porem esta senha no DB'
+      const user = data.find(
+        (u) => u.email === email && u.senha === password
       );
-      
+
       if (user) {
         setError("");
         alert(`Bem-vindo(a), ${user.nome}!`);
 
-        navigate("/home"); // redireciona pra página principal (ajuste se precisar)
+        // 🔥 SALVA LOGIN PARA A NAVBAR SABER QUE ESTÁ LOGADO
+        localStorage.setItem("usuarioLogado", JSON.stringify(user));
+
+        navigate("/caes");
+        window.location.reload(); 
       } else {
         setError("Senha incorreta.");
       }
-    } 
-    catch (err) {
+    } catch (err) {
       console.error("Erro ao conectar com o servidor:", err);
       setError("Erro ao conectar com o servidor. Verifique se o JSON Server está rodando.");
     }
@@ -50,6 +53,7 @@ const Login = () => {
       style={{ backgroundColor: "#fff5e6" }}
     >
       <div className="w-100" style={{ maxWidth: "420px" }}>
+
         {/* Logo */}
         <div className="text-center mb-4">
           <Link to="/" className="d-inline-flex align-items-center gap-2 text-decoration-none">
@@ -94,7 +98,7 @@ const Login = () => {
               />
             </div>
 
-            {/* Mensagem de erro */}
+            {/* Erro */}
             {error && (
               <div className="alert alert-danger py-2" role="alert">
                 {error}
@@ -144,7 +148,6 @@ const Login = () => {
         </p>
       </div>
 
-      {/* Estilo adicional */}
       <style>{`
         .bg-gradient {
           background: linear-gradient(135deg, rgba(255,165,0,0.15), rgba(255,200,100,0.25));

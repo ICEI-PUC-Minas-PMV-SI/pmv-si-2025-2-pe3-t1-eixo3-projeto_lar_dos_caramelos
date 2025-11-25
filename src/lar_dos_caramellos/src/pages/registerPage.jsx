@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Heart } from "lucide-react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const Register = () => {
+const Register = ({ setUsuarioLogado }) => {
   const navigate = useNavigate();
   const [form, setForm] = useState({
     nome: "",
@@ -58,6 +58,19 @@ const Register = () => {
       });
 
       if (response.ok) {
+        const data = await response.json();
+
+        // Salva o usuário logado no localStorage
+        const loggedUser = {
+          id: data.id,
+          nome: form.nome,
+          email: form.email,
+        };
+        localStorage.setItem("usuarioLogado", JSON.stringify(loggedUser));
+
+        // Atualiza estado da Navbar
+        if (setUsuarioLogado) setUsuarioLogado(loggedUser);
+
         setSuccess("Cadastro realizado com sucesso!");
         setForm({
           nome: "",
@@ -68,8 +81,9 @@ const Register = () => {
           confirmarSenha: "",
         });
 
-        // Redireciona após 1 segundo
-        setTimeout(() => navigate("/caes"), 1000);
+        // Redireciona para /caes
+        navigate("/caes");
+         window.location.reload(); 
       } else {
         setError("Erro ao cadastrar usuário. Tente novamente.");
       }
@@ -106,89 +120,21 @@ const Register = () => {
             {success && <div className="alert alert-success">{success}</div>}
 
             <form onSubmit={handleSubmit}>
-              <div className="mb-3">
-                <label htmlFor="nome" className="form-label fw-semibold">
-                  Nome Completo
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="nome"
-                  placeholder="Seu nome"
-                  value={form.nome}
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="mb-3">
-                <label htmlFor="email" className="form-label fw-semibold">
-                  E-mail
-                </label>
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email"
-                  placeholder="seu@email.com"
-                  value={form.email}
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="mb-3">
-                <label htmlFor="cpf" className="form-label fw-semibold">
-                  CPF
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="cpf"
-                  placeholder="000.000.000-00"
-                  value={form.cpf}
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="mb-3">
-                <label htmlFor="telefone" className="form-label fw-semibold">
-                  Telefone
-                </label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="telefone"
-                  placeholder="(00) 00000-0000"
-                  value={form.telefone}
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="mb-3">
-                <label htmlFor="senha" className="form-label fw-semibold">
-                  Senha
-                </label>
-                <input
-                  type="password"
-                  className="form-control"
-                  id="senha"
-                  placeholder="Senha"
-                  value={form.senha}
-                  onChange={handleChange}
-                />
-              </div>
-
-              <div className="mb-3">
-                <label htmlFor="confirmarSenha" className="form-label fw-semibold">
-                  Confirmar Senha
-                </label>
-                <input
-                  type="password"
-                  className="form-control"
-                  id="confirmarSenha"
-                  placeholder="Senha"
-                  value={form.confirmarSenha}
-                  onChange={handleChange}
-                />
-              </div>
+              {["nome","email","cpf","telefone","senha","confirmarSenha"].map((field) => (
+                <div className="mb-3" key={field}>
+                  <label htmlFor={field} className="form-label fw-semibold">
+                    {field === "nome" ? "Nome Completo" : field === "email" ? "E-mail" : field === "cpf" ? "CPF" : field === "telefone" ? "Telefone" : field === "senha" ? "Senha" : "Confirmar Senha"}
+                  </label>
+                  <input
+                    type={field.includes("senha") ? "password" : "text"}
+                    className="form-control"
+                    id={field}
+                    placeholder={field === "nome" ? "Seu nome" : field === "email" ? "seu@email.com" : field === "cpf" ? "000.000.000-00" : field === "telefone" ? "(00) 00000-0000" : "Senha"}
+                    value={form[field]}
+                    onChange={handleChange}
+                  />
+                </div>
+              ))}
 
               <button type="submit" className="btn btn-primary w-100 py-2 fw-semibold">
                 Criar Conta
