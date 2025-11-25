@@ -61,22 +61,85 @@
       "confirmarSenha": "123456"
     },
     {
-      "id": "d2b0",
-      "nome": "joao parafuso",
-      "email": "parafuso@gmail.com",
-      "cpf": "1237654",
-      "telefone": "21982254899",
-      "senha": "123456",
-      "confirmarSenha": "123456"
+      "id": "f0ae",
+      "nome": "Pedro Augusto Alves Oliveira Calazans",
+      "email": "helderalvesdeoliveira@hotmail.com",
+      "cpf": "164.651.836-50",
+      "telefone": "33189660",
+      "senha": "111111",
+      "confirmarSenha": "111111"
     },
     {
-      "id": "29e2",
-      "nome": "Raquel",
-      "email": "raquel-ribeiro2311@gmail.com",
-      "cpf": "12345678955",
-      "telefone": "9999999999",
-      "senha": "123456",
-      "confirmarSenha": "123456"
+      "id": "96bc",
+      "nome": "Pedro Augusto Alves Oliveira Calazans",
+      "email": "SANSNJASNJANJ@gmail.com",
+      "cpf": "027.935.496-73",
+      "telefone": "23232323",
+      "senha": "11111111",
+      "confirmarSenha": "11111111"
+    },
+    {
+      "id": "45cb",
+      "nome": "Pedro Augusto Alves Oliveira Calazans",
+      "email": "lalala@gmail.com",
+      "cpf": "027.935.496-73",
+      "telefone": "33189660",
+      "senha": "11111111",
+      "confirmarSenha": "11111111"
+    },
+    {
+      "id": "b0d4",
+      "nome": "Pedro Augusto Alves Oliveira Calazans",
+      "email": "calazansaldeir@gmail.com",
+      "cpf": "684.086.686-68",
+      "telefone": "23232323",
+      "senha": "11111111",
+      "confirmarSenha": "11111111"
+    },
+    {
+      "id": "57f0",
+      "nome": "Pedro Augusto Alves Oliveira Calazans",
+      "email": "calazansaldeir@gmail.com",
+      "cpf": "164.761.836-50",
+      "telefone": "33189660",
+      "senha": "12345678",
+      "confirmarSenha": "12345678"
+    },
+    {
+      "id": "b173",
+      "nome": "Pedro Augusto Alves Oliveira Calazans",
+      "email": "lasanha1234@hotmail.com",
+      "cpf": "684.086.686-68",
+      "telefone": "33189660",
+      "senha": "111111111",
+      "confirmarSenha": "111111111"
+    },
+    {
+      "id": "ef9e",
+      "nome": "Pedro Augusto Alves Oliveira Calazans",
+      "email": "LALALALAL@gmail.com",
+      "cpf": "027.935.496-73",
+      "telefone": "33189660",
+      "senha": "11111111",
+      "confirmarSenha": "11111111"
+    },
+    {
+      "id": "2533",
+      "nome": "Pedro Augusto Alves Oliveira Calazans",
+      "email": "dasdlsdlnsadl@gmail.com",
+      "cpf": "164.761.836-50",
+      "telefone": "33189660",
+      "senha": "11111111",
+      "confirmarSenha": "11111111"
+    },
+    {
+      "id": "85fc",
+      "nome": "JOSE",
+      "email": "wewewe@gmail.com",
+      "cpf": "164.761.836-50",
+      "telefone": "11111111",
+      "senha": "1111111111",
+      "confirmarSenha": "1111111111"
     }
   ]
 }
