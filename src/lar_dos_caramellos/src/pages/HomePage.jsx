@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 
 
 
+
 // Placeholder Button e Card para manter estrutura
 const Button = ({ children, className }) => (
   <button className={`btn ${className}`}>{children}</button>

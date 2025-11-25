@@ -61,6 +61,7 @@
       "confirmarSenha": "123456"
     },
     {
+<<<<<<< Updated upstream
       "id": "f0ae",
       "nome": "Pedro Augusto Alves Oliveira Calazans",
       "email": "helderalvesdeoliveira@hotmail.com",
@@ -140,6 +141,24 @@
       "telefone": "11111111",
       "senha": "1111111111",
       "confirmarSenha": "1111111111"
+=======
+      "id": "d2b0",
+      "nome": "joao parafuso",
+      "email": "parafuso@gmail.com",
+      "cpf": "1237654",
+      "telefone": "21982254899",
+      "senha": "123456",
+      "confirmarSenha": "123456"
+    },
+    {
+      "id": "f90e",
+      "nome": "Mariana Silva",
+      "email": "mariana.silva@gmail.com",
+      "cpf": "234.567.098.45",
+      "telefone": "11991178747",
+      "senha": "123456",
+      "confirmarSenha": "123456"
+>>>>>>> Stashed changes
     }
   ]
 }
