@@ -2,12 +2,22 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import RegisterService from "../services/RegisterService";
 
+<<<<<<< HEAD
+
+export default function RegisterPage() { 
+   
+const [user, setUser] = useState({
+    name:'',
+    email:'',
+    password:''
+=======
 export default function RegisterPage({ setUsuarioLogado }) {
   const [user, setUser] = useState({
     name: "",
     email: "",
     password: "",
   });
+>>>>>>> main
 
   const [buttonDisabled, setButtonDisabled] = useState(true);
   const navigate = useNavigate();
